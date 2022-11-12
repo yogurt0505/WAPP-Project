@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WAPP_Project.Login" %>
 
 
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
+
   <section class="vh-100" style="background-color: #9A616D;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -16,36 +17,43 @@
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
-                <form>
-
+               
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                     <span class="h1 fw-bold mb-0">Logo</span>
                   </div>
 
-                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login your account</h5>
 
                   <div class="form-outline mb-4">
-                    <input type="email" id="txt_username" class="form-control form-control-lg" />
-                    <label class="form-label" for="txt_username">User Name</label>
+                    <asp:TextBox runat="server" ID="txt_username" class="form-control form-control-lg"></asp:TextBox>
+                    <label class="form-label" for="txt_username">User Name</label> 
+                       <asp:RequiredFieldValidator runat="server" ID="user" ControlToValidate="txt_username"   
+                        ErrorMessage="Please enter a user name" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div>
 
+
                   <div class="form-outline mb-4">
-                    <input type="password" id="txt_password" class="form-control form-control-lg" />
+                    <asp:TextBox runat="server" ID="txt_password" class="form-control form-control-lg" TextMode="Password"></asp:TextBox>
                     <label class="form-label" for="txt_password">Password</label>
+                       <asp:RequiredFieldValidator runat="server" ID="pass" ControlToValidate="txt_password"   
+                        ErrorMessage="Please enter a password" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div>
+
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                    <asp:Button runat="server" ID="btn_login" class="btn btn-dark btn-lg btn-block" OnClick="Login_Click" text="Login"></asp:Button>
                   </div>
 
+
+                  <asp:Label runat="server" ID="lbl_msg" Text=""></asp:Label> <br />
+
                   <a class="small text-muted" href="#!">Forgot password?</a>
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
-                      style="color: #393f81;">Register here</a></p>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have a account? <a href="#!"
+                      style="color: #393f81;">Register here!</a></p>
                   <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a>
-                </form>
-
+                
               </div>
             </div>
           </div>

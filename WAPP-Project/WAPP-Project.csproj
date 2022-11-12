@@ -136,8 +136,14 @@
     <Content Include="img\blog-2.jpg" />
     <Content Include="img\blog-3.jpg" />
     <Content Include="img\call-to-action.jpg" />
+    <Content Include="img\course1.jpg" />
+    <Content Include="img\course2.jpg" />
+    <Content Include="img\course3.jpg" />
     <Content Include="img\footer.jpg" />
+    <Content Include="img\header.svg" />
     <Content Include="img\hero.jpg" />
+    <Content Include="img\login.svg" />
+    <Content Include="img\Logo.png" />
     <Content Include="img\quote.jpg" />
     <Content Include="img\service.jpg" />
     <Content Include="img\team-1.jpg" />

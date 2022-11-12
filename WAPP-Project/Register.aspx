@@ -59,12 +59,10 @@
                   </div>
 
 
+                  <asp:Label runat="server" ID="lbl_msg" Text=""></asp:Label> <br />
 
-                  <asp:Label runat="server" ID="lbl_msg" runat="server" Text="Label"></asp:Label> <br />
-
-                  <a class="small text-muted" href="#!">Forgot password?</a>
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
-                      style="color: #393f81;">Register here</a></p>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Already have a account? <a href="#!"
+                      style="color: #393f81;">Login here!</a></p>
                   <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a>
                 
