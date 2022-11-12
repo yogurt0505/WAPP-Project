@@ -350,7 +350,5 @@
     </div>
     <!-- Call To Action Start -->
     
-</body>
 
-</html>
 </asp:Content>
