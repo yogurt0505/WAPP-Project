@@ -2,7 +2,7 @@
 <%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WAPP_Project.Register" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
 
   <section class="vh-100" style="background-color: #9A616D;">
   <div class="container py-5 h-100">
@@ -28,17 +28,39 @@
 
                   <div class="form-outline mb-4">
                     <asp:TextBox runat="server" ID="txt_username" class="form-control form-control-lg"></asp:TextBox>
-                    <label class="form-label" for="txt_username">User Name</label>
+                    <label class="form-label" for="txt_username">User Name</label> 
+                       <asp:RequiredFieldValidator runat="server" ID="user" ControlToValidate="txt_username"   
+                        ErrorMessage="Please enter a user name" ForeColor="Red"></asp:RequiredFieldValidator>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <asp:TextBox runat="server" ID="txt_email" class="form-control form-control-lg" TextMode="Email"></asp:TextBox>
+                    <label class="form-label" for="txt_email">Email</label>
+                       <asp:RequiredFieldValidator runat="server" ID="email" ControlToValidate="txt_email"   
+                        ErrorMessage="Please enter an email" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div>
 
                   <div class="form-outline mb-4">
                     <asp:TextBox runat="server" ID="txt_password" class="form-control form-control-lg" TextMode="Password"></asp:TextBox>
                     <label class="form-label" for="txt_password">Password</label>
+                       <asp:RequiredFieldValidator runat="server" ID="pass" ControlToValidate="txt_password"   
+                        ErrorMessage="Please enter a password" ForeColor="Red"></asp:RequiredFieldValidator>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <asp:TextBox runat="server" ID="txt_conpass" class="form-control form-control-lg" TextMode="Password"></asp:TextBox>
+                    <label class="form-label" for="txt_conpass">Confirm Password</label>
+                       <asp:RequiredFieldValidator runat="server" ID="conpass" ControlToValidate="txt_conpass"   
+                        ErrorMessage="Please confirm password" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <asp:Button runat="server" id="btn_register" class="btn btn-dark btn-lg btn-block" OnClick="Register_Click" text="Register"></asp:Button>
+                    <asp:Button runat="server" ID="btn_register" class="btn btn-dark btn-lg btn-block" OnClick="Register_Click" text="Register"></asp:Button>
                   </div>
+
+
+
+                  <asp:Label runat="server" ID="lbl_msg" runat="server" Text="Label"></asp:Label> <br />
 
                   <a class="small text-muted" href="#!">Forgot password?</a>
                   <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
