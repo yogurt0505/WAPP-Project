@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="App_Data\Database2.mdf" />
     <Content Include="App_Data\Database2_log.ldf">
@@ -132,10 +133,13 @@
     <Content Include="img\about-1.jpg" />
     <Content Include="img\about-2.jpg" />
     <Content Include="img\about-bg.jpg" />
+    <Content Include="img\achievement.svg" />
+    <Content Include="img\alantoh.jpg" />
     <Content Include="img\blog-1.jpg" />
     <Content Include="img\blog-2.jpg" />
     <Content Include="img\blog-3.jpg" />
     <Content Include="img\call-to-action.jpg" />
+    <Content Include="img\contact.svg" />
     <Content Include="img\course1.jpg" />
     <Content Include="img\course2.jpg" />
     <Content Include="img\course3.jpg" />
@@ -145,7 +149,9 @@
     <Content Include="img\login.svg" />
     <Content Include="img\Logo.png" />
     <Content Include="img\quote.jpg" />
+    <Content Include="img\rick.gif" />
     <Content Include="img\service.jpg" />
+    <Content Include="img\shunzhen.jpg" />
     <Content Include="img\team-1.jpg" />
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
@@ -154,6 +160,7 @@
     <Content Include="img\testimonial-2.jpg" />
     <Content Include="img\testimonial.jpg" />
     <Content Include="img\user.jpg" />
+    <Content Include="img\yogurt.png" />
     <Content Include="lib\owlcarousel\LICENSE" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="js\main.js" />
@@ -209,6 +216,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
