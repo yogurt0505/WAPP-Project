@@ -284,7 +284,7 @@ footer ul li {
 }
 
 .card__login {
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,8 +309,8 @@ footer ul li {
     margin: 10px 0px;
 }
 
-    .textfield > input {
-        width: 100;
+    .textfield .input {
+        width: 100%;
         border: none;
         border-radius: 10px;
         padding: 15px;
@@ -322,16 +322,16 @@ footer ul li {
         box-sizing: border-box;
     }
 
-    .textfield > label {
+    .textfield  .label {
         color: var(--color-white);
         margin-bottom: 10px;
     }
 
-    .textfield > input::placeholder {
+    .textfield .input::placeholder {
         color: #f0ffff94;
     }
 
-.btn__login {
+.btn__register {
     width: 100%;
     padding: 16px 0px;
     margin: 25px;
