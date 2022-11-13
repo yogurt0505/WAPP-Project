@@ -525,7 +525,7 @@ footer ul li {
 }
 
 input, textarea {
-    width: 100%;
+    width: 500%;
     padding: 1rem;
     background: var(--color-bg);
     color: var(--color-white);
