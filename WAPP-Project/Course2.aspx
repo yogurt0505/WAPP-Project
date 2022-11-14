@@ -4,14 +4,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Learn Korean Ep. 2: Conjugating the ~요 form</h1>
+    
+    <br />
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZxksamsZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
+    
+    <br />
 
     <p>In this lesson we’ll learn how to conjugate the “~요 form.” I don’t normally like to pick
     favorites, but this verb is probably the <b>most important verb form</b> to learn in Korean; that’s
     because the concepts we’ll talk about in this lesson will carry over into other grammar forms
     later on. If you haven’t learned much Korean yet, trust me on this – it’s important to learn
     the 요 form before moving on. 그럼, 시작할까요? (“Well then, shall we start?”)    </p>
+
+    <br />
 
     <h3>How to conjugate the ~요 form</h3>
     <ol>
@@ -20,20 +26,30 @@
         <li>Add 요</li>
     </ol>
 
+    <br />
+
     <p>First, take the verb that you want to conjugate, and remove the <b>다</b> at the end.
     Congratulations – you have now created what we call the <b>verb stem</b>. You’ll see me talk
     about verb stems quite often, and they’re an important piece for making other grammar
     forms as well.</p>
 
+    <br />
+
     <p>Next, look at the last <b>vowel</b> in the final syllable of that verb stem. If it’s either <b>ㅗ</b> or <b>ㅏ</b>, then
     you’ll be adding <b>어</b>; if it’s anything else, you’ll be adding <b>어</b>. Simple, isn’t it? Umm, we’ll get
     back to this</p>
+
+    <br />
 
     <p>Finally, add <b>요</b> to the end to be polite. You don’t need to add a <b>요</b> if you’re speaking with
     close friends who are the same age as you or younger, small children, and animals. For all
     other situations, add the <b>요</b>.</p>
 
+    <br />
+
     <p>Let’s practice with a few examples:</p>
+
+    <br />
 
     <p>Take the verb “먹다,” “to eat.”</p>
     <ol>
@@ -42,6 +58,8 @@
         <li>Add a 요 to the end  먹어요</li>
     </ol>
 
+    <br />
+
     <p>Let’s try with “좋다,” “to be good.”</p>
     <ol>
         <li>Remove the 다  좋</li>
@@ -49,15 +67,23 @@
         <li>Add a 요 to the end  좋아요</li>
     </ol>
 
+    <br />
+
     <p>That’s the basic rule for conjugating the ~요 form, but there are several exceptions to this
     rule. The exceptions are good though in the long run – they make the finished product a bit
     easier to say. Let’s take a look at the first exception.</p>
 
+    <br />
+
     <h3>Exception 1: Ends in a vowel with no consonants</h3>
+
+    <br />
 
     <p>After removing the 다, anytime the verb stem ends in a vowel with no consonants (meaning
     there are no consonants on the bottom of the last syllable) the 아 or 어 ending will combine
     into the verb, instead of attaching to it. Let me show you what I mean.</p>
+
+    <br />
 
     <p>Take the verb “오다,” “to come.”</p>
     <ol>
@@ -68,6 +94,8 @@
         <li>Add a 요 to the end  와요</li>
     </ol>
 
+    <br />
+
     <p>Take the verb “주다,” “to give.”</p>
     <ol>
         <li>Remove the 다  주<br />주 ends in a vowel (it has no consonants at the bottom)</li>
@@ -77,14 +105,22 @@
         <li>Add a 요 to the end  줘요</li>
     </ol>
 
+    <br />
+
     <p>This rule makes these types of verbs easier to say – who wants to say “가아요” anyway?</p>
 
+    <br />
+
     <h3>Exception 2: Ends in ㅣ</h3>
+
+    <br />
 
     <p>When the verb stem ends in a ㅣ, such as in 시, or 치, to name a couple, it combines
     similarly to Exception 1. Since ㅣ is not ㅗ or ㅏ, normally you would add 어 to the end.
     However, to make it easier to say, this 어 will combine together (becoming ㅕ). Here are
     some examples:</p>
+
+    <br />
 
     <p>Take the verb “마시다,” “to drink.”</p>
     <ol>
@@ -95,6 +131,8 @@
         <li>Add a 요 to the end  마셔요</li>
     </ol>
 
+    <br />
+
     <p>Take the verb “가르치다,” “to teach.”</p>
     <ol>
         <li>Remove the 다  가르치<br />
@@ -104,13 +142,17 @@
         <li>Add a 요 to the end  가르쳐요</li>
     </ol>
 
-    <h3>Exception 3: Ends in ㅡ</h3>
+    <br />
 
+    <h3>Exception 3: Ends in ㅡ</h3>
+    <br />
     <p>When the verb stem ends with the ㅡ vowel, in order to know whether to add 아 or 어 you
     need to look back one more space (the 2<sup>nd</sup> to last syllable)
     to see what <b>that</b> syllable’s last Page 4 of 9
     vowel is. Then, remove the ㅡ and conjugate appropriately. It may sound confusing to read
     it, but after you see it, it’s not that hard.</p>
+
+    <br />
 
     <p>Take the verb “바쁘다,” “to be busy.”</p>
     <ol>
@@ -121,6 +163,8 @@
             Then add the 아  바빠</li>
         <li>Add a 요 to the end  바빠요</li>
     </ol>
+
+    <br />
 
     <p>Take the verb “예쁘다,” “to be pretty.”</p>
     <ol>
@@ -133,6 +177,8 @@
         <li>Add a 요 to the end  예뻐요</li>
     </ol>
 
+    <br />
+
     <p><b>“But what if the verb only has 2 syllables? There is no ‘2<sup>nd</sup> to last syllable’ to look at!”</b><br />
         In this case, it’s actually easier. Because there is no 2<sup>nd</sup>
         to last syllable, you don’t need to do 
@@ -140,6 +186,8 @@
         and add a 어 (because ㅡ is not
         ㅗ or ㅏ).
     </p>
+
+    <br />
 
     <p>Take the verb “쓰다,” “to use” or “to write.”</p>
     <ol>
@@ -152,7 +200,11 @@
         <li>Add a 요 to the end  써요</li>
     </ol>
 
+    <br />
+
     <h3>Exception 3: Ends in 르</h3>
+
+    <br />
 
     <p><b>This rule is a companion to Exception 2.</b>Although 르 technically also ends in ㅡ, this is a
     special case. If you find the verb stem ends in 르, there’s one more thing you have to do in
@@ -162,6 +214,8 @@
     worry! There are only a few of these verbs, and you’ll hear and use them <b>so often</b> that
     you’ll probably never worry about how to conjugate them when speaking Korean.
     </p>
+
+    <br />
 
     <p>Take the verb “모르다,” “to not know.”</p>
     <ol>
@@ -175,6 +229,8 @@
             Then add the 아  몰라</li>
         <li>Add a 요 to the end  몰라요</li>
     </ol>
+
+    <br />
 
     <p>Take the verb “부르다,” “to call” (as in “to call someone’s name”).</p>
     <ol>
@@ -190,7 +246,11 @@
         <li>Add a 요 to the end  불러요</li>
     </ol>
 
+    <br />
+
     <h3>Exception 4: Ends in ㅂ (Descriptive Verbs)</h3>
+
+    <br />
 
     <p>When you’re conjugating a <b>descriptive verb</b> (a descriptive verb is basically an adjective in
     English) – not an action verb (such as “to go,” “to eat,” etc) – and the verb stem ends in a ㅂ,
@@ -198,6 +258,8 @@
     or ㅏ). Also add a 요 at the end like normal in order to sound polite. <b>You can imagine that
     we are trading the ㅂ for a 우</b>. Just remember that this rule only applies to descriptive
     verbs – if you’re describing something with it, it’s a descriptive verb</p>
+
+    <br />
 
     <p>Take the verb “부럽다,” “to be jealous.”</p>
     <ol>
@@ -213,6 +275,8 @@
         <li>Add a 요 to the end  부러워요</li>
     </ol>
 
+    <br />
+
     <p>Take the verb “맵다,” “to be spicy.”</p>
     <ol>
         <li>Remove the 다  맵<br />
@@ -227,9 +291,13 @@
         <li>Add a 요 to the end  매워요</li>
     </ol>
 
+    <br />
+
     <p>Remember that this only applies to descriptive verbs, and not to action verbs. For example,
     take the verb “씹다,” “to chew.” “To chew” is an action verb, so when conjugating it, here is
     all that you have to do:</p>
+
+    <br />
 
     <p>Take the verb “씹다,” “to chew.”</p>
     <ol>
@@ -238,12 +306,18 @@
         <li>Add a 요 to the end  씹어요</li>
     </ol>
 
+    <br />
+
     <h3>Exception 5: 하다</h3>
+
+    <br />
 
     <p>“하다” is one of the most commonly used verbs in the Korean language, and has a special
     way of conjugating. Fortunately for us, it’s easy. “하다” simply becomes “해,” to which you
     can add 요 onto. <b>All verbs that end with 하다 also conjugate this way</b>, such as “똑똑하다,”
     “to be smart,” or “공부하다,” “to study.”</p>
+
+    <br />
 
     <p>Take the verb “하다.”</p>
     <ol>
@@ -252,10 +326,16 @@
         <li>Add a 요 to the end  해요</li>
     </ol>
 
+    <br />
+
     <p>*Sometimes you might see “하여” used instead of “해,” and this is common in older written
     materials – you won’t need to use it yourself, but just be able to recognize what it is.</p>
 
+    <br />
+
     <h3>Exception 5: 이다 and 아니다</h3>
+
+    <br />
 
     <p>As “이다,” “to be,” is also one of the most commonly used verbs in the Korean language, it
     too has a special way of conjugating. It’s simple, but it has a couple of rules to it. “이다”
@@ -264,9 +344,13 @@
     (for casual speech), it becomes “이야” when used after a consonant, or “야” when used after
     a vowel.</p>
 
+    <br />
+
     <p>“아니다” is a bit simpler to conjugate. It becomes “아니에요,” whether it comes after a
     consonant or a vowel. To make it casual, it becomes “아니야,” also whether it comes after a
     consonant or a vowel.</p>
+
+    <br />
 
     <p><b>“이다,” “to be”</b></p>
     <p style="text-decoration: underline;">Polite:</p>
@@ -280,6 +364,8 @@
         <li>Vowel + 야</li>
     </ul>
 
+    <br />
+
     <p><b>“아니다,” “to not be”</b></p>
     <p style="text-decoration: underline;">Polite:</p>
     <ul>
@@ -290,22 +376,32 @@
         <li>아니야</li>
     </ul>
 
+    <br />
+
     <h3>Exception 6: ???</h3>
+
+    <br />
 
     <p>Just kidding, there’s no Exception 6. But there are some other irregular verbs that have their
     own way of conjugating – for these, you’ll simply learn them on a case by case basis, and
     there are not a lot of them.</p>
+
+    <br />
 
     <p>One example of a common irregular is the verb “걷다,” “to walk.” If this verb wasn’t irregular,
     it would conjugate as “<b>걷</b>어요,” but for many verbs that end in ㄷ (such as 걷다), the ㄷ
     changes into an ㄹ. Therefore, this verb actually becomes “<b>걸</b>어요.” However, the verb “믿다,”
     “to believe,” just conjugates as “<b>믿</b>어요.”</p>
 
+    <br />
+
     <p>I know that this lesson was a lot to process, so I highly recommend reading it over again.
     Also, practice conjugating a few verbs on your own. The best way to get fast at these is to
     practice them. And although it seems like there are a lot of rules, over time you’ll develop a
     sense that will let you feel how verbs should conjugate based on how they sound. Until
     then, these are the rules you’ll need to train that sense.</p>
+
+    <br />
 
     <p>And that’s it! These are all of the rules for conjugating verbs to the ~요 form. I hope this
     lesson was helpful as well. Your feedback is more than appreciated.</p>
