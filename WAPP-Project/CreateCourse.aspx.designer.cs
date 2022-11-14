@@ -11,53 +11,62 @@ namespace WAPP_Project
 {
 
 
-    public partial class Login
+    public partial class CreateCourse
     {
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txt_username control.
+        /// txt_coursename control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_username;
+        protected global::System.Web.UI.WebControls.TextBox txt_coursename;
 
         /// <summary>
-        /// user control.
+        /// txt_desc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator user;
+        protected global::System.Web.UI.WebControls.TextBox txt_desc;
 
         /// <summary>
-        /// txt_password control.
+        /// radio_coursecategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_password;
+        protected global::System.Web.UI.WebControls.RadioButtonList radio_coursecategory;
 
         /// <summary>
-        /// pass control.
+        /// file_courseimg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator pass;
+        protected global::System.Web.UI.WebControls.FileUpload file_courseimg;
+
+        /// <summary>
+        /// txt_url control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_url;
 
         /// <summary>
         /// lbl_msg control.
@@ -69,12 +78,12 @@ namespace WAPP_Project
         protected global::System.Web.UI.WebControls.Label lbl_msg;
 
         /// <summary>
-        /// btn_register control.
+        /// btn_create control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_register;
+        protected global::System.Web.UI.WebControls.Button btn_create;
     }
 }
