@@ -106,6 +106,7 @@
     <Content Include="about.aspx" />
     <Content Include="AdminDashboard.aspx" />
     <Content Include="CreateCourse.aspx" />
+    <Content Include="CreateFeedback.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="App_Data\Database2.mdf" />
     <Content Include="App_Data\Database2_log.ldf">
@@ -240,6 +241,13 @@
     </Compile>
     <Compile Include="CreateCourse.aspx.designer.cs">
       <DependentUpon>CreateCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFeedback.aspx.cs">
+      <DependentUpon>CreateFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateFeedback.aspx.designer.cs">
+      <DependentUpon>CreateFeedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
