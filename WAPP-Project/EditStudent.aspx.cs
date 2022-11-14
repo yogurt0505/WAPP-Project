@@ -89,7 +89,7 @@ namespace WAPP_Project
                         String ProfilePic = file_profilepic.FileName.ToString();
                         file_profilepic.PostedFile.SaveAs(Server.MapPath("~/upload/") + ProfilePic);
 
-                        string query1 = "UPDATE [Student] SET FirstName=@FirstName, LastName=@LastName, Gender=@Gender, ProfilePic=@ProfilePic WHERE UserID=17";
+                        string query1 = "UPDATE [Student] SET FirstName=@FirstName, LastName=@LastName, Gender=@Gender, ProfilePic=@ProfilePic WHERE UserID=@UserID";
                         SqlCommand cmd1 = new SqlCommand(query1, con);
 
                         cmd1.Parameters.AddWithValue("@FirstName", FirstName);
