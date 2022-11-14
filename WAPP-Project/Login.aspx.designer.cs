@@ -60,15 +60,6 @@ namespace WAPP_Project
         protected global::System.Web.UI.WebControls.RequiredFieldValidator pass;
 
         /// <summary>
-        /// btn_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login;
-
-        /// <summary>
         /// lbl_msg control.
         /// </summary>
         /// <remarks>
@@ -76,5 +67,14 @@ namespace WAPP_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_msg;
+
+        /// <summary>
+        /// btn_register control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_register;
     }
 }

@@ -1,4 +1,7 @@
-﻿<%@ Page Title="Homepage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="WAPP_Project.Homepage" %>
+﻿<%@ Page Title="Let's Learn Hangul! - Homepage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="WAPP_Project.Homepage" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    Let's Learn Hangul! - Homepage
+</asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
   

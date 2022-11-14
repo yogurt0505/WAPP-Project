@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="WAPP_Project.test" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    About Us
+</asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
 

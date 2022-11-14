@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WAPP_Project.Register" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    Let's Learn Hangul! - Register
+</asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
@@ -46,13 +49,13 @@
                         ErrorMessage="Please confirm password again" ForeColor="Red"></asp:RequiredFieldValidator>
                  </div>
 
-                    <asp:Label runat="server" ID="lbl_msg" Text=""></asp:Label> <br />
+                    <asp:Label runat="server" ID="lbl_msg" Text="" ForeColor="Red"></asp:Label> <br />
 
    
 
                 <asp:Button runat="server" ID="btn_register" class="btn__register" OnClick="Register_Click" text="Register"></asp:Button>
                   
-                    <div class="signup__login">Already a member? <a href="register.html"><u>Login Now</u></a></div>
+                    <div class="signup__login">Already a member? <a href="Login.aspx"><u>Login Now</u></a></div>
                 </div>
                 
             </div>
