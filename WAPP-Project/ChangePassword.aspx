@@ -32,6 +32,9 @@
                 ErrorMessage="Please confirm your new password again" ForeColor="Red"></asp:RequiredFieldValidator>
 
 
+            <asp:Label runat="server" ID="lbl_msg" Text="" ForeColor="Red"></asp:Label> <br />
+
+
             <asp:Button runat="server" ID="btn_change" OnClick="Change_Password_Click" text="Confirm Changes"></asp:Button>
         </div>
     </form>
