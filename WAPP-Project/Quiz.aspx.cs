@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Data;
+using System.Text;
+using System.Data.SqlClient;
+using System.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +15,32 @@ namespace WAPP_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                string CourseID = Request.QueryString["Id"];
+                int intTest = Convert.ToInt32(CourseID);
+                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
+                    using (SqlConnection con = new SqlConnection(constr))
+                    {
+                        using (SqlCommand cmd = new SqlCommand("SELECT * FROM Question WHERE CourseID=" + intTest))
+                        {
+                            using (SqlDataAdapter sda = new SqlDataAdapter())
+                            {
+                                cmd.Connection = con;
+                                sda.SelectCommand = cmd;
+                                using (DataTable dt = new DataTable())
+                                {
+                                    sda.Fill(dt);
+                                QuestionRepeater.DataSource = dt;
+                                QuestionRepeater.DataBind();
+                                con.Close();
+                                }
+                            }
+                        
+                    }
+                }
+            }
         }
     }
 }
