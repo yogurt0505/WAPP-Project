@@ -11,7 +11,7 @@ namespace WAPP_Project
 {
 
 
-    public partial class test
+    public partial class about
     {
     }
 }
