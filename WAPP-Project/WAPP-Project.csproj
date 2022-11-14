@@ -142,6 +142,9 @@
     <Content Include="img\course1.jpg" />
     <Content Include="img\course2.jpg" />
     <Content Include="img\course3.jpg" />
+    <Content Include="img\course4.jpg" />
+    <Content Include="img\course5.jpg" />
+    <Content Include="img\course6.jpg" />
     <Content Include="upload\noimg.jpg" />
     <Content Include="img\footer.jpg" />
     <Content Include="img\header.svg" />

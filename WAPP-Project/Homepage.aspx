@@ -37,11 +37,44 @@
 
                     <article class="course">
                         <div class="course__image">
+                            <img src="./img/course4.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Hangul (Part 2) - First Syllable Block and More Letters (ㅁ, ㅂ, ㅅ, ㅈ, ㅎ, ㅗ)</h4>
+                            <P>Learn ㅁ, ㅂ, ㅅ, ㅈ, ㅎ, ㅗ From Teacher Billy Korean</P>
+                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="course__image">
                             <img src="./img/course3.jpg">
                         </div>
                         <div class="course__Info">
                         <h4>Learn Hangul (Part 3) - More Syllable Blocks and Consonants (ㄹ, ㅇ)</h4>
                         <p>Learn ㄹ, ㅇ From Teacher Billy Korean</p>
+                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/course5.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Hangul (Part 4) - A Few More Vowels (ㅓ, ㅜ, ㅡ, ㅣ)</h4>
+                            <P>Learn ㅓ, ㅜ, ㅡ, ㅣ From Teacher Billy Korean</P>
+                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/course6.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Hangul (Part 5) - More Vowels (ㅔ, ㅐ, ㅑ, ㅛ)</h4>
+                            <P>Learn ㅔ, ㅐ, ㅑ, ㅛ From Teacher Billy Korean</P>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
