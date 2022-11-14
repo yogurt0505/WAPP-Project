@@ -46,7 +46,17 @@ namespace WAPP_Project
 
         protected void Submit_Answer_Click(object sender, EventArgs e)
         {
-            foreach(RepeaterItem question in QuestionRepeater.Items)
+            int correctans = 0;
+            int totalans = QuestionRepeater.Items.Count;
+            //Get session info
+            int UserID = Convert.ToInt16(Session["UserID"]);
+            string CourseID = Request.QueryString["Id"];
+            int intTest = Convert.ToInt16(CourseID);
+
+            try
+            {
+            
+            foreach (RepeaterItem question in QuestionRepeater.Items)
             {
                 RadioButton A = (RadioButton)question.FindControl("A");
                 Label CorrectAns = (Label)question.FindControl("lbl_ans");
@@ -59,6 +69,7 @@ namespace WAPP_Project
                     Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
                     CorrectFeedback.Text = "Correct!";
                     CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                        correctans++;
                 }
 
                 else
@@ -84,6 +95,7 @@ namespace WAPP_Project
                         Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
                         CorrectFeedback.Text = "Correct!";
                         CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                        correctans++;
                     }
 
                     else
@@ -109,6 +121,7 @@ namespace WAPP_Project
                         Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
                         CorrectFeedback.Text = "Correct!";
                         CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                        correctans++;
                     }
 
                     else
@@ -134,6 +147,7 @@ namespace WAPP_Project
                         Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
                         CorrectFeedback.Text = "Correct!";
                         CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                        correctans++;
                     }
 
                     else
@@ -144,6 +158,59 @@ namespace WAPP_Project
                     }
                 }
             }
+
+
+                //Check quiz record exists
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+
+                con.Open();
+                string query1 = "SELECT * from [Score] WHERE UserID=@UserID AND CourseID=@CourseID";
+                SqlCommand cmd1 = new SqlCommand(query1, con);
+                cmd1.Parameters.AddWithValue("@UserID", UserID);
+                cmd1.Parameters.AddWithValue("@CourseID", intTest);
+
+                SqlDataAdapter sda = new SqlDataAdapter(cmd1);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                cmd1.ExecuteNonQuery();
+                con.Close();
+
+                if (dt.Rows.Count == 0)
+                {
+                    con.Open();
+                    string query2 = "INSERT INTO [Score] (UserID, CourseID, Score) values (@UserID, @CourseID, @Score)";
+                    SqlCommand cmd2 = new SqlCommand(query2, con);
+
+                    cmd2.Parameters.AddWithValue("@UserID", UserID);
+                    cmd2.Parameters.AddWithValue("@CourseID", intTest);
+                    cmd2.Parameters.AddWithValue("@Score", correctans + "/" + totalans);
+
+                    cmd2.ExecuteNonQuery();
+                    con.Close();
+                }
+
+                else
+                {
+                    con.Open();
+                    string query3 = "UPDATE [Score] SET Score=@Score WHERE UserID=@UserID AND CourseID=@CourseID";
+                    SqlCommand cmd3 = new SqlCommand(query3, con);
+
+                    cmd3.Parameters.AddWithValue("@UserID", UserID);
+                    cmd3.Parameters.AddWithValue("@CourseID", intTest);
+                    cmd3.Parameters.AddWithValue("@Score", correctans + "/" + totalans);
+
+                    cmd3.ExecuteNonQuery();
+                    con.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("Error:" + ex.ToString());
+
+            }
+
         }
     }
 }
