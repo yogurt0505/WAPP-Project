@@ -15,15 +15,58 @@ namespace WAPP_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!this.IsPostBack)
+            {
 
+                string searchkey = Request.QueryString["SearchKey"];
+                DataTable dt = this.GetData(searchkey);
+                StringBuilder html = new StringBuilder();
+
+                string ImgHolder = "";
+                
+                foreach (DataRow row in dt.Rows)
+                {
+                    string CourseImg = row["CourseImg"].ToString();
+                    string CourseName = row["CourseName"].ToString();
+                    string CourseCategory = row["CourseCategory"].ToString();
+                    string CourseURL = row["CourseURL"].ToString();
+                    string CourseDesc = row["CourseDesc"].ToString();
+                    string CourseID = row["CourseID"].ToString();
+
+                    if (CourseImg == "")
+                    {
+                        ImgHolder = "noimg.jpg";
+                    }
+                    else 
+                    {
+                        ImgHolder = CourseImg;
+                    }
+
+                    html.Append("<div class=\"box\">");
+
+                    html.Append("<img src=\"upload/" + ImgHolder + "\" width=\"100px\" style=\"float:right\">");
+                    html.Append("<h3>" + CourseName + "</h3>");
+                    html.Append("Phone Number:<br>" + CourseDesc + "<br><br>");
+                    html.Append("Email:<br>" + CourseCategory + "<br><br>");
+                    html.Append("Home Address:<br>" + CourseURL + "<br><br>");
+
+                    html.Append("<a href=\"EditCourse.aspx?Id=" + CourseID + "\">Edit</a> ");
+                    html.Append("<a onClick=\"return confirm('Delete this record?')\" href=\"DeleteCourse.aspx?Id=" + CourseID + "\">Delete</a>");
+
+                    html.Append("</div>");
+                }
+
+                ViewCourse.Controls.Add(new Literal { Text = html.ToString() });
+            }
         }
+    
 
-        private DataTable GetData()
+        private DataTable GetData(string searchkey)
         {
             string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd1 = new SqlCommand("SELECT * FROM course"))
+                using (SqlCommand cmd1 = new SqlCommand("SELECT * FROM Course WHERE CourseName LIKE '%" + searchkey + "%'"))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
@@ -39,5 +82,10 @@ namespace WAPP_Project
             }
         }
 
+        protected void Search_Click(object sender, EventArgs e)
+        {
+            string searchkey = this.searchkey.Text;
+            Response.Redirect("AdminDashboard.aspx?searchkey=" + searchkey);
+        }
     }
 }
