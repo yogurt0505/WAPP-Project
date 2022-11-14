@@ -101,10 +101,10 @@
                             </article>
                             <article class="team__member">
                                 <div class="team__member-image">
-                                    <img src="./img/rick.gif">
+                                    <img src="./img/christoffer.jpg">
                                 </div>
                                 <div class="team__member-info">
-                                    <h4>Rick</h4>
+                                    <h4>Jacob Christoffer Espersson</h4>
                                     <p>Web Designer</p>
                                 </div>
                                 <div class="team__member-socials">

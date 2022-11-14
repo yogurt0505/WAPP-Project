@@ -106,6 +106,7 @@
     <Content Include="about.aspx" />
     <Content Include="AdminDashboard.aspx" />
     <Content Include="ChangePassword.aspx" />
+    <Content Include="Course1.aspx" />
     <Content Include="DeleteCourse.aspx" />
     <Content Include="EditCourse.aspx" />
     <Content Include="CreateCourse.aspx" />
@@ -142,6 +143,7 @@
     <Content Include="img\blog-2.jpg" />
     <Content Include="img\blog-3.jpg" />
     <Content Include="img\call-to-action.jpg" />
+    <Content Include="img\christoffer.jpg" />
     <Content Include="img\contact.svg" />
     <Content Include="img\course1.jpg" />
     <Content Include="img\course2.jpg" />
@@ -252,6 +254,13 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course1.aspx.cs">
+      <DependentUpon>Course1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course1.aspx.designer.cs">
+      <DependentUpon>Course1.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteCourse.aspx.cs">
       <DependentUpon>DeleteCourse.aspx</DependentUpon>
