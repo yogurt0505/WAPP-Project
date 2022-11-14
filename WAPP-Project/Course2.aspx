@@ -15,7 +15,8 @@
     favorites, but this verb is probably the <b>most important verb form</b> to learn in Korean; that’s
     because the concepts we’ll talk about in this lesson will carry over into other grammar forms
     later on. If you haven’t learned much Korean yet, trust me on this – it’s important to learn
-    the 요 form before moving on. 그럼, 시작할까요? (“Well then, shall we start?”)    </p>
+    the 요 form before moving on. 그럼, 시작할까요? (“Well then, shall we start?”)
+    </p>
 
     <br />
 
