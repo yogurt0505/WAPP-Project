@@ -107,6 +107,7 @@
     <Content Include="AdminDashboard.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Course1.aspx" />
+    <Content Include="Course2.aspx" />
     <Content Include="DeleteCourse.aspx" />
     <Content Include="EditCourse.aspx" />
     <Content Include="CreateCourse.aspx" />
@@ -261,6 +262,13 @@
     </Compile>
     <Compile Include="Course1.aspx.designer.cs">
       <DependentUpon>Course1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course2.aspx.cs">
+      <DependentUpon>Course2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course2.aspx.designer.cs">
+      <DependentUpon>Course2.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteCourse.aspx.cs">
       <DependentUpon>DeleteCourse.aspx</DependentUpon>
