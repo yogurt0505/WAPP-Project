@@ -26,66 +26,66 @@
                 <div class="container courses__Container">
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course1.jpg">
+                            <img src="./img/LK1.jpg">
                         </div>
                         <div class="course__Info">
-                            <h4>Learn Hangul (Part 1) - Introduction and First Letters (ㄱ, ㄴ, ㄷ, ㅏ)</h4>
-                            <P>Learn ㄱ, ㄴ, ㄷ, ㅏ From Teacher Billy Korean</P>
+                            <h4>Learn Korean Ep. 1: How to say "Have to~" in Korean</h4>
+                            <P>Learn How to say "Have to~" From Teacher Billy Korean</P>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course4.jpg">
+                            <img src="./img/LK2.jpg">
                         </div>
                         <div class="course__Info">
-                            <h4>Learn Hangul (Part 2) - First Syllable Block and More Letters (ㅁ, ㅂ, ㅅ, ㅈ, ㅎ, ㅗ)</h4>
-                            <P>Learn ㅁ, ㅂ, ㅅ, ㅈ, ㅎ, ㅗ From Teacher Billy Korean</P>
+                            <h4>Learn Korean Ep. 2: Conjugating the ~요 form</h4>
+                            <P>Learn Conjugating the ~요 form From Teacher Billy Korean</P>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course3.jpg">
+                            <img src="./img/LK3.jpg">
                         </div>
                         <div class="course__Info">
-                        <h4>Learn Hangul (Part 3) - More Syllable Blocks and Consonants (ㄹ, ㅇ)</h4>
-                        <p>Learn ㄹ, ㅇ From Teacher Billy Korean</p>
+                        <h4>Learn Korean Ep. 3: "Want~" and "Want to~" 원하다 vs. ~고 싶다</h4>
+                        <p>Learn "Want~" and "Want to~" From Teacher Billy Korean</p>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course5.jpg">
+                            <img src="./img/LK4.jpg">
                         </div>
                         <div class="course__Info">
-                            <h4>Learn Hangul (Part 4) - A Few More Vowels (ㅓ, ㅜ, ㅡ, ㅣ)</h4>
-                            <P>Learn ㅓ, ㅜ, ㅡ, ㅣ From Teacher Billy Korean</P>
+                            <h4>Learn Korean Ep. 4: "To be" and "To exist" | 이다 vs. 있다</h4>
+                            <P>Learn "To be" and "To exist" From Teacher Billy Korean</P>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course6.jpg">
+                            <img src="./img/LK5.jpg">
                         </div>
                         <div class="course__Info">
-                            <h4>Learn Hangul (Part 5) - More Vowels (ㅔ, ㅐ, ㅑ, ㅛ)</h4>
-                            <P>Learn ㅔ, ㅐ, ㅑ, ㅛ From Teacher Billy Korean</P>
+                            <h4>Learn Korean Ep. 5: "Also" and "Again" | 도, 또, and 다시</h4>
+                            <P>Learn "Also" and "Again" From Teacher Billy Korean</P>
                         <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
                     <article class="course">
                         <div class="course__image">
-                            <img src="./img/course2.jpg">
+                            <img src="./img/LK6.jpg">
                         </div>
                         <div class="course__Info">
-                            <h4> Learn Hangul (Part 6) - Even More Vowels (ㅕ, ㅠ, ㅖ, ㅒ)</h4>                  
-                            <p>Learn ㅕ, ㅠ, ㅖ, ㅒ From Teacher Billy Korean</p>
+                            <h4>Learn Korean Ep. 6: "Already" | 이미 & 벌써</h4>                  
+                            <p>Learn "Already" From Teacher Billy Korean</p>
                             <a href="login.html" class="btn btn-primary">Learn More</a>
                         </div>
                         
