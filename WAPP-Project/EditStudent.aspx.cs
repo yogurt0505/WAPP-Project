@@ -17,16 +17,19 @@ namespace WAPP_Project
         {
             if (!IsPostBack)
             {
+                string UserID = Request.QueryString["Id"];
+                int intTest = Convert.ToInt32(UserID);
                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
                 using (SqlConnection con = new SqlConnection(constr))
                 {
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM [Student] WHERE UserID=17"))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM [Student] WHERE UserID=@UserID"))
                     {
                         using (SqlDataAdapter sda = new SqlDataAdapter())
                         {
                             cmd.Connection = con;
                             sda.SelectCommand = cmd;
+                            cmd.Parameters.AddWithValue("@UserID", intTest);
                             using (DataTable dt = new DataTable())
                             {
                                 sda.Fill(dt);
@@ -50,11 +53,12 @@ namespace WAPP_Project
        protected void Edit_Click(object sender, EventArgs e)
         {
             //Setup database connection
+            string UserID = Request.QueryString["Id"];
+            int intTest = Convert.ToInt32(UserID);
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             String FirstName = txt_firstname.Text;
             String LastName = txt_lastname.Text;
             String Gender = radio_gender.Text;
-
             con.Open();
 
             try
@@ -92,6 +96,7 @@ namespace WAPP_Project
                         cmd1.Parameters.AddWithValue("@LastName", LastName);
                         cmd1.Parameters.AddWithValue("@Gender", Gender);
                         cmd1.Parameters.AddWithValue("@ProfilePic", ProfilePic);
+                        cmd1.Parameters.AddWithValue("@UserID", intTest);
 
                         cmd1.ExecuteNonQuery();
                         con.Close();
@@ -103,12 +108,13 @@ namespace WAPP_Project
                 else
                 {
 
-                    string query2 = "UPDATE [Student] SET FirstName=@FirstName, LastName=@LastName, Gender=@Gender WHERE UserID=17";
+                    string query2 = "UPDATE [Student] SET FirstName=@FirstName, LastName=@LastName, Gender=@Gender WHERE UserID=@UserID";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
 
                     cmd2.Parameters.AddWithValue("@FirstName", FirstName);
                     cmd2.Parameters.AddWithValue("@LastName", LastName);
                     cmd2.Parameters.AddWithValue("@Gender", Gender);
+                    cmd2.Parameters.AddWithValue("@UserID", intTest);
 
                     cmd2.ExecuteNonQuery();
                     con.Close();

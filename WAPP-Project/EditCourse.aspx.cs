@@ -17,16 +17,20 @@ namespace WAPP_Project
         {
             if(!IsPostBack)
             {
+                string CourseID = Request.QueryString["Id"];
+                int intTest = Convert.ToInt32(CourseID);
+
                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
                 using (SqlConnection con = new SqlConnection(constr))
                 {
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM [Course] WHERE CourseID=4"))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM [Course] WHERE CourseID=@CourseID"))
                     {
                         using (SqlDataAdapter sda = new SqlDataAdapter())
-                        {
+                        { 
                             cmd.Connection = con;
                             sda.SelectCommand = cmd;
+                            cmd.Parameters.AddWithValue("@CourseID", intTest);
                             using (DataTable dt = new DataTable())
                             {
                                 sda.Fill(dt);
@@ -53,6 +57,8 @@ namespace WAPP_Project
         protected void Edit_Course_Click(object sender, EventArgs e)
         {
             //Setup database connection
+            string CourseID = Request.QueryString["Id"];
+            int intTest = Convert.ToInt32(CourseID);
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             String CourseName = txt_coursename.Text;
             String CourseCategory = radio_coursecategory.Text;
@@ -89,7 +95,7 @@ namespace WAPP_Project
                         String CourseImg = file_courseimg.FileName.ToString();
                         file_courseimg.PostedFile.SaveAs(Server.MapPath("~/upload/") + CourseImg);
 
-                        string query1 = "UPDATE [Course] SET CourseName=@CourseName, CourseCategory=@CourseCategory, CourseImg=@CourseImg, CourseURL=@CourseURL, CourseDesc=@CourseDesc WHERE CourseID=4";
+                        string query1 = "UPDATE [Course] SET CourseName=@CourseName, CourseCategory=@CourseCategory, CourseImg=@CourseImg, CourseURL=@CourseURL, CourseDesc=@CourseDesc WHERE CourseID=@CourseID";
                         SqlCommand cmd1 = new SqlCommand(query1, con);
 
                         cmd1.Parameters.AddWithValue("@CourseName", CourseName);
@@ -97,6 +103,7 @@ namespace WAPP_Project
                         cmd1.Parameters.AddWithValue("@CourseImg", CourseImg);
                         cmd1.Parameters.AddWithValue("@CourseURL", CourseURL);
                         cmd1.Parameters.AddWithValue("@CourseDesc", CourseDesc);
+                        cmd1.Parameters.AddWithValue("@CourseID", intTest);
 
                         cmd1.ExecuteNonQuery();
                         con.Close();
@@ -108,13 +115,14 @@ namespace WAPP_Project
                 else
                 {
 
-                    string query2 = "UPDATE [Course] SET CourseName=@CourseName, CourseCategory=@CourseCategory, CourseURL=@CourseURL, CourseDesc=@CourseDesc WHERE CourseID=4";
+                    string query2 = "UPDATE [Course] SET CourseName=@CourseName, CourseCategory=@CourseCategory, CourseURL=@CourseURL, CourseDesc=@CourseDesc WHERE CourseID=@CourseID";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
 
                     cmd2.Parameters.AddWithValue("@CourseName", CourseName);
                     cmd2.Parameters.AddWithValue("@CourseCategory", CourseCategory);
                     cmd2.Parameters.AddWithValue("@CourseURL", CourseURL);
                     cmd2.Parameters.AddWithValue("@CourseDesc", CourseDesc);
+                    cmd2.Parameters.AddWithValue("@CourseID", intTest);
 
                     cmd2.ExecuteNonQuery();
                     con.Close();
