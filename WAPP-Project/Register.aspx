@@ -55,7 +55,7 @@
 
                 <asp:Button runat="server" ID="btn_register" class="btn__register" OnClick="Register_Click" text="Register"></asp:Button>
                   
-                    <div class="signup__login">Already a member? <a href="Login.aspx"><u>Login Now</u></a></div>
+                    <div class="signup__login"><a href="Login.aspx">Already a member? <u>Login Now</u></a></div>
                 </div>
                 
             </div>
