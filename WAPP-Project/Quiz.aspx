@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Quiz]"></asp:SqlDataSource>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Question]"></asp:SqlDataSource>
 
             <asp:Repeater ID="QuestionRepeater" runat="server">
                 <ItemTemplate>
@@ -20,17 +20,17 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:RadioButton ID="QA" runat="server" Text='<%#Eval("QA") %>' GroupName="Quiz"/><br />
-                                     <asp:RadioButton ID="QB" runat="server" Text='<%#Eval("QB") %>' GroupName="Quiz"/><br />
-                                     <asp:RadioButton ID="QC" runat="server" Text='<%#Eval("QC") %>' GroupName="Quiz"/><br />
-                                     <asp:RadioButton ID="QD" runat="server" Text='<%#Eval("QD") %>' GroupName="Quiz"/>
+                                    <asp:RadioButton ID="A" runat="server" Text='<%#Eval("A") %>' GroupName="Quiz"/><br />
+                                     <asp:RadioButton ID="B" runat="server" Text='<%#Eval("B") %>' GroupName="Quiz"/><br />
+                                     <asp:RadioButton ID="C" runat="server" Text='<%#Eval("C") %>' GroupName="Quiz"/><br />
+                                     <asp:RadioButton ID="D" runat="server" Text='<%#Eval("D") %>' GroupName="Quiz"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:Label ID="lbl_selectedans" runat="server" Text=""></asp:Label>
+                                    <asp:Label ID="lbl_feedback" runat="server" Text=""></asp:Label>
+                                    <asp:Label ID="lbl_selected" runat="server" Text="" Visible="false"></asp:Label>
                                     <br />
-                                    <asp:Label ID="lbl_correct" runat="server" Text="The correct answer is " Visible="false"></asp:Label>
                                     <asp:Label ID="lbl_ans" runat="server" Text='<%#Eval("Answer") %>' Visible="false"></asp:Label>
 
                                 </td>
@@ -39,6 +39,9 @@
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
+
+             <asp:Button runat="server" ID="btn_submit" OnClick="Submit_Answer_Click" text="Submit Answer"></asp:Button>
+                 
         </div>
     </form>
 </body>
