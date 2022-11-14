@@ -41,6 +41,109 @@ namespace WAPP_Project
                     }
                 }
             }
+
+        }
+
+        protected void Submit_Answer_Click(object sender, EventArgs e)
+        {
+            foreach(RepeaterItem question in QuestionRepeater.Items)
+            {
+                RadioButton A = (RadioButton)question.FindControl("A");
+                Label CorrectAns = (Label)question.FindControl("lbl_ans");
+
+                if (A.Checked == true)
+                {
+
+                if (CorrectAns.Text == "A")
+                {
+                    Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
+                    CorrectFeedback.Text = "Correct!";
+                    CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                }
+
+                else
+                {
+                    Label WrongFeedback = (Label)question.FindControl("lbl_feedback");
+                    WrongFeedback.Text = "The correct answer is <b>" + CorrectAns.Text.ToString();
+                    WrongFeedback.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            }
+
+            foreach (RepeaterItem question in QuestionRepeater.Items)
+            {
+                RadioButton B = (RadioButton)question.FindControl("B");
+                Label CorrectAns = (Label)question.FindControl("lbl_ans");
+
+
+                if (B.Checked == true)
+                {
+
+                    if (CorrectAns.Text == "B")
+                    {
+                        Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
+                        CorrectFeedback.Text = "Correct!";
+                        CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                    }
+
+                    else
+                    {
+                        Label WrongFeedback = (Label)question.FindControl("lbl_feedback");
+                        WrongFeedback.Text = "The correct answer is <b>" + CorrectAns.Text.ToString();
+                        WrongFeedback.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+            }
+
+            foreach (RepeaterItem question in QuestionRepeater.Items)
+            {
+                RadioButton C = (RadioButton)question.FindControl("C");
+                Label CorrectAns = (Label)question.FindControl("lbl_ans");
+
+
+                if (C.Checked == true)
+                {
+
+                    if (CorrectAns.Text == "C")
+                    {
+                        Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
+                        CorrectFeedback.Text = "Correct!";
+                        CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                    }
+
+                    else
+                    {
+                        Label WrongFeedback = (Label)question.FindControl("lbl_feedback");
+                        WrongFeedback.Text = "The correct answer is <b>" + CorrectAns.Text.ToString();
+                        WrongFeedback.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+            }
+
+            foreach (RepeaterItem question in QuestionRepeater.Items)
+            {
+                RadioButton D = (RadioButton)question.FindControl("D");
+                Label CorrectAns = (Label)question.FindControl("lbl_ans");
+
+
+                if (D.Checked == true)
+                {
+
+                    if (CorrectAns.Text == "D")
+                    {
+                        Label CorrectFeedback = (Label)question.FindControl("lbl_feedback");
+                        CorrectFeedback.Text = "Correct!";
+                        CorrectFeedback.ForeColor = System.Drawing.Color.Green;
+                    }
+
+                    else
+                    {
+                        Label WrongFeedback = (Label)question.FindControl("lbl_feedback");
+                        WrongFeedback.Text = "The correct answer is <b>" + CorrectAns.Text.ToString();
+                        WrongFeedback.ForeColor = System.Drawing.Color.Red;
+                    }
+                }
+            }
         }
     }
 }
