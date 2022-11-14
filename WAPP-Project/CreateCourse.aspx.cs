@@ -51,10 +51,13 @@ namespace WAPP_Project
                     {
                         lbl_msg.Text = "Invalid File. Please upload an image file with extension " + string.Join(", ", validFileTypes);
                     }
+                     //end validation
 
                     else
                     {
+                        //inserting img file into db
                         String CourseImg = file_courseimg.FileName.ToString();
+                        //save img into local folder
                         file_courseimg.PostedFile.SaveAs(Server.MapPath("~/upload/") + CourseImg);
 
                         string query1 = "INSERT INTO [Course] (CourseName, CourseCategory, CourseImg, CourseURL, CourseDesc) " +

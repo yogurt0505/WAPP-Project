@@ -154,6 +154,7 @@
     <Content Include="img\LK4.jpg" />
     <Content Include="img\LK5.jpg" />
     <Content Include="img\LK6.jpg" />
+    <Content Include="Quiz.aspx" />
     <Content Include="upload\noimg.jpg" />
     <Content Include="img\footer.jpg" />
     <Content Include="img\header.svg" />
@@ -297,6 +298,13 @@
     </Compile>
     <Compile Include="EditStudent.aspx.designer.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
