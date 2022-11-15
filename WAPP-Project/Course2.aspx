@@ -9,9 +9,10 @@
     <div class="course_title">
     <h1>Learn Korean Ep. 2: Conjugating the ~요 form</h1>
     </div>
+
     <br />
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZxksamsZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/7ZxksamsZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
     
     <br />
         <div class="course_details">
