@@ -31,7 +31,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 1: How to say "Have to~" in Korean</h4>
                             <P>Learn How to say "Have to~" From Teacher Billy Korean</P>
-                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
+                        <a href="Course1.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -42,7 +42,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 2: Conjugating the ~요 form</h4>
                             <P>Learn Conjugating the ~요 form From Teacher Billy Korean</P>
-                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
+                        <a href="Course2.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -53,7 +53,7 @@
                         <div class="course__Info">
                         <h4>Learn Korean Ep. 3: "Want~" and "Want to~" 원하다 vs. ~고 싶다</h4>
                         <p>Learn "Want~" and "Want to~" From Teacher Billy Korean</p>
-                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
+                        <a href="Course3.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -79,6 +79,16 @@
                         </div>
                     </article>
 
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/LK6.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Korean Ep. 6: “Already”</h4>
+                            <P>Learn “Already” From Teacher Billy Korean</P>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
                 </div>
                </section> 
                 
