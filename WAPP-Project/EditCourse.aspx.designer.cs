@@ -15,15 +15,6 @@ namespace WAPP_Project
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// txt_coursename control.
         /// </summary>
         /// <remarks>
@@ -78,12 +69,12 @@ namespace WAPP_Project
         protected global::System.Web.UI.WebControls.Label lbl_msg;
 
         /// <summary>
-        /// btn_create control.
+        /// btn_edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_create;
+        protected global::System.Web.UI.WebControls.Button btn_edit;
     }
 }
