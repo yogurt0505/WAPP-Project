@@ -3,14 +3,18 @@
     Let's Learn Hangul! - Learn Korean Ep. 2
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="courses">
+
+   
+    <div class="course_title">
     <h1>Learn Korean Ep. 2: Conjugating the ~요 form</h1>
-    
+    </div>
     <br />
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZxksamsZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
     
     <br />
-
+        <div class="course_details">
     <p>In this lesson we’ll learn how to conjugate the “~요 form.” I don’t normally like to pick
     favorites, but this verb is probably the <b>most important verb form</b> to learn in Korean; that’s
     because the concepts we’ll talk about in this lesson will carry over into other grammar forms
@@ -406,4 +410,6 @@
 
     <p>And that’s it! These are all of the rules for conjugating verbs to the ~요 form. I hope this
     lesson was helpful as well. Your feedback is more than appreciated.</p>
+            </div>
+         </section>
 </asp:Content>

@@ -3,11 +3,15 @@
     Let's Learn Hangul! - Learn Korean Ep. 1
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Learn Korean Ep. 1: How to say "Have to~" in Korean</h1>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CfOSDJx97v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
-
-    <p>
+<section class="courses">
+    <div class="course_title">
+         <h1>Learn Korean Ep. 1: How to say "Have to~" in Korean</h1>
+    </div>
+        <div class="course_video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CfOSDJx97v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
+        </div>
+    <div class="course_details">
+   <p>
         여러분 (this means “everyone”), welcome to the wonderful language of Korean! Actually, if 
         you’re reading this it probably means you’ve already been learning the Korean language, or 
         at least learned 한글 (“Hangul,” the Korean alphabet) as well as a few grammar points, and 
@@ -17,7 +21,7 @@
     </p>
 
     <div>
-        <h2>Today’s lesson will cover how to say the following: </h2>
+        
         <ul>
             <li>“Have to~” (As in, “I have to do something.”)</li>
             <li>“Need to~” (As in, “I need to do something.”)</li>
@@ -109,5 +113,7 @@
         <li><b>~야 돼요 “need to~” or “have to~”“</b></li>
         <li><b>~야 해요 ”must~”</b></li>
     </ul>
+    </div>
+    </section>
 
 </asp:Content>

@@ -188,7 +188,7 @@ header {
 
 .courses__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -211,6 +211,11 @@ header {
 .course_Info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
+}
+
+.courses {
+    text-align: center;
+    margin-top:5%;
 }
 
 /* ============================== CSS ============================== */
