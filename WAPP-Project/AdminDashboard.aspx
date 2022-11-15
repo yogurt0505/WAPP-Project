@@ -1,50 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDashboard.aspx.cs" Inherits="WAPP_Project.AdminDashboard" %>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Let's Learn Hangul!</title>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminDashboard.aspx.cs" Inherits="WAPP_Project.AdminDashboard" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    Admin Dashboard
+</asp:Content>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
-        </head>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
 
-<body>
-    <nav>
-        <div class="container nav__container">
-          
-            <a href="index.html"><h4>Let's Learn Hangul!</h4></a>
-
-            
-            <ul class="nav__menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li class="nav__profile">
-                    <div class="profile__picture">
-                        <img src="./img/rick.gif">
-                    </div>
-                        <ul>
-                            <li><a href="admin_dashboard.html">Dashboard</a></li>
-                            <li><a href="">Log Out</a></li>
-
-                        </ul>
-                    
-
-                </li>
-            </ul>
-                <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-                <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>  
-        </div>
-        </nav>
-
-      <form id="form1" enctype="multipart/form-data" method="post"  runat="server">
       
 
 <section class="dashboard">
@@ -154,16 +114,8 @@
         <div>
             <asp:PlaceHolder ID="ViewCourse" runat="server"></asp:PlaceHolder>
         </div>
-    </form>
- 
 
 
 
- <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-    </html>
+</asp:Content>
+

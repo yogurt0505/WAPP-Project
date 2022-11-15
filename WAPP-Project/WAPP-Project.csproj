@@ -105,10 +105,12 @@
   <ItemGroup>
     <Content Include="about.aspx" />
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="AdminViewCourse.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Course1.aspx" />
     <Content Include="Course2.aspx" />
     <Content Include="Course3.aspx" />
+    <Content Include="css\style.css" />
     <Content Include="DeleteCourse.aspx" />
     <Content Include="EditCourse.aspx" />
     <Content Include="CreateCourse.aspx" />
@@ -124,7 +126,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -248,6 +249,13 @@
     </Compile>
     <Compile Include="AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewCourse.aspx.cs">
+      <DependentUpon>AdminViewCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminViewCourse.aspx.designer.cs">
+      <DependentUpon>AdminViewCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="ChangePassword.aspx.cs">
