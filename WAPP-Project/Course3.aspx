@@ -27,7 +27,8 @@
     ends in a consonant, or “를” if the noun ends in a vowel. I put the object marker in
     parentheses because it is optional when speaking casually – just know that it normally
     should be there for speaking politely. Finally, the verb “to want” is “원하다.” Conjugate this
-    verb any way you’d like.    </p>
+    verb any way you’d like.
+    </p>
 
     <br />
 
