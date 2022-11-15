@@ -11,7 +11,7 @@
                             <h1>Let's Learn Hangul!</h1>
                             <h4>Korean Language Learning Center</h4>
                             <P>The Best Platform You Can Find To Learn Korean. Thousands of lessons. No credit card needed.</P>
-                            <a href="login.html" class="btn btn-primary">Get Started </a>
+                            <a href="Login.aspx" class="btn btn-primary">Get Started </a>
                         </div>
                         <div class="header__right">
                             <div class="header_right-image">
@@ -31,7 +31,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 1: How to say "Have to~" in Korean</h4>
                             <P>Learn How to say "Have to~" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -42,7 +42,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 2: Conjugating the ~요 form</h4>
                             <P>Learn Conjugating the ~요 form From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -53,7 +53,7 @@
                         <div class="course__Info">
                         <h4>Learn Korean Ep. 3: "Want~" and "Want to~" 원하다 vs. ~고 싶다</h4>
                         <p>Learn "Want~" and "Want to~" From Teacher Billy Korean</p>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -64,7 +64,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 4: "To be" and "To exist" | 이다 vs. 있다</h4>
                             <P>Learn "To be" and "To exist" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -75,7 +75,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 5: "Also" and "Again" | 도, 또, and 다시</h4>
                             <P>Learn "Also" and "Again" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Login.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
