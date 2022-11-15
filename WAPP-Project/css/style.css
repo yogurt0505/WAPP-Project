@@ -501,6 +501,7 @@ footer ul li {
     gap: 4rem;
     height: 30rem;
     margin: 7rem auto;
+    margin-bottom: 30rem;
 }
 
 .contact__aside {
