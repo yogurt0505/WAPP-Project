@@ -8,12 +8,19 @@
     <h1>Learn Korean Ep. 3: “Want~” and “Want to~”</h1>
 
     </div>
+
+    <br />
+
         <div class="course_video">
 
         
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cNh-Nb7m97k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/cNh-Nb7m97k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
 
 </div>
+
+    <br />
+
+    <div class="course_details">
     <p>They might sound similar at first glance, but “want” and “want to” are two separate
     grammar forms in Korean. In English we could either say “I <b>want</b> an apple,” or “I <b>want to</b>
     eat an apple.” Notice that “want” is followed by a noun that the speaker desires, and “want
@@ -152,5 +159,6 @@
     distinguish them as well, and that this lesson can be helpful. As always, I recommend that
     you practice these concepts on your own, because practicing will make these concepts
     become easier and easier.</p>
+    </div>
         </section>
     </asp:Content>

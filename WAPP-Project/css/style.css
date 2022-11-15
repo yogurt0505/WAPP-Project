@@ -226,17 +226,24 @@ header {
     font-size: 0.9rem;
 }
 
-.courses h1 {
+.courses h1,h3 {
     text-align: center;
     /*margin-top:5%;*/
 }
 
-/* ============================== CSS ============================== */
-footer {
-    background: var(--color-bg1);
-    padding-top: 5rem;
-    font-size: 0.9rem;
+.courses ul li {
+    list-style-type: disc;
 }
+
+.courses ol li {
+    list-style-type: decimal;
+}
+    /* ============================== CSS ============================== */
+    footer {
+        background: var(--color-bg1);
+        padding-top: 5rem;
+        font-size: 0.9rem;
+    }
 
 .footer__container {
     display: grid;

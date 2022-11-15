@@ -7,9 +7,15 @@
     <div class="course_title">
          <h1>Learn Korean Ep. 1: How to say "Have to~" in Korean</h1>
     </div>
+
+    <br />
+
         <div class="course_video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/CfOSDJx97v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
+              <iframe width="1120" height="630" src="https://www.youtube.com/embed/CfOSDJx97v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
         </div>
+
+    <br />
+
     <div class="course_details">
    <p>
         여러분 (this means “everyone”), welcome to the wonderful language of Korean! Actually, if 
@@ -19,6 +25,8 @@
         the hard way – by studying it hard, and for a long time! And I know what parts can become 
         obstacles for Korean learners. 그럼, 시작할까요? (“Well then, shall we start?”)
     </p>
+
+    <br />
 
     <div>
         
@@ -33,12 +41,19 @@
     <br />
 
     <h3>“Need to~” or “Have to~” <br />verb stem + (아/어/etc) + 야 되다</h3>
+
+    <br />
+
     <p>This form can either mean “need to~” or “have to~.” Although “need to~” and “have to~”
     have a different feeling in English, there’s no need to distinguish between the two in Korean.</p>
+
+    <br />
 
     <p><b>What is a verb stem?</b> A verb stem is just a verb, minus the “다” at the end. The verb stem 
     of 먹다, “to eat,” is just “먹,” and the verb stem of “놀다,” “to hang out” or “to play,” is just 
     “놀.” Simple, huh!</p>
+
+    <br />
 
     <p><b>What does the middle part, “(아/어/etc)” mean?</b> The middle part is determined when 
     conjugating the 요 form of a verb (e.g. 먹다먹<b>어</b>요, 놀다놀<b>아</b>요). That middle part that’s 
@@ -46,6 +61,8 @@
     form, minus the 요. If you don’t already know how to conjugate the 요 form, don’t worry! 
     Episode 2 covers this topic completely.
     </p>
+
+    <br />
 
     <em>Common ways to conjugate 되다:</em>
     <ol>
@@ -57,19 +74,27 @@
     </ol>
 
     <br />
+
     Let’s go over some example sentences.
+
     <br />
 
     <p>밥을 <b>먹어야 됩니다.</b></p>
     <p>“I need to eat.” or “I have to eat.”</p>
     <p>As this sentence uses “됩니다,” it would be considered formal (extra polite).</p>
 
+    <br />
+
     <p>친구에게 편지를 <b>써야 돼요.</b></p>
     <p>“I need to write a letter to my friend.” or “I have to write a letter to my friend.”</p>
+
+    <br />
 
     <p>꼭 일을 <b>해야 됩니까?</b></p>
     <p>“Do you really need to work?” or “Do you really have to work?”</p>
     <p>“꼭” literally means “surely” or “at any cost,” but can also be translated as “really.”</p>
+
+    <br />
 
     <p>난 빨리 <b>가야 돼!</b></p>
     <p>“I need to go quickly!” or “I have to go quickly!”</p>
@@ -79,12 +104,18 @@
     than yourself or who you are not well acquainted with already. To make this sentence more 
     polite, you could change “나는” to “저는,” and add a 요 to the end (“저는 빨리 가야 돼요.”).</p>
 
+    <br />
+
     <h3>“Must~” <br />verb stem + (아/어/etc) + 야 하다</h3>
+
+    <br />
 
     <p>The difference between this form and the last one is tone – “must” sounds stronger, and a 
     tiny bit more serious than “have to~” or “need to~.” In Korean, the difference between the 
     two forms is small (smaller than in English). However, feel free to use either one.
     </p>
+
+    <br />
 
     <em>Common ways to conjugate 하다:</em>
     <ol>
@@ -95,19 +126,31 @@
         <li>한다 <sub>(“Plain Form,” as a statement) </sub></li>
     </ol>
 
+    <br />
+
     <p>Let’s go over some example sentences.</p>
+
+    <br />
 
     <p>지금 학교에 <b>가야 해요.</b></p>
     <p>“I must go to school now.”</p>
 
+    <br />
+
     <p>저는 유럽을 <b>여행해야 합니다.</b></p>
     <p>“I must travel Europe.”</p>
+
+    <br />
 
     <p>저는 선물을 <b>만들어야 해요.</b></p>
     <p>“I must make a present.”</p>
 
+    <br />
+
     <p>저는 한국말을 더 <b>배워야 합니다.</b></p>
     <p>“I must learn more Korean.”</p>
+
+    <br />
 
     <p>I’ve given examples using various forms of both 되다 and 하다, ranging from formal to
     casual speech. <i>If you’re not sure which one to use, pick either of these two:</i></p>
@@ -115,6 +158,12 @@
         <li><b>~야 돼요 “need to~” or “have to~”“</b></li>
         <li><b>~야 해요 ”must~”</b></li>
     </ul>
+
+    <br />
+
+    <p>I hope this lesson will be helpful in addition to watching my videos on YouTube. As 
+    always, I appreciate your feedback! Leave comments, suggestions, or requests for future 
+    lessons</p>
     </div>
     </section>
 
