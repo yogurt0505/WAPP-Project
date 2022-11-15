@@ -1,28 +1,10 @@
-﻿<%@ Page Title="Let's Learn Hangul! - Homepage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="WAPP_Project.Homepage" %>
-<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
-    Let's Learn Hangul! - Homepage
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NotStudent_courses.aspx.cs" Inherits="WAPP_Project.Courses" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Let's Learn Hangul! - Learn Korean Ep. 3
 </asp:Content>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
-  
-     <header>
-                    <div class="container header__container">
-                        <div class="header__left">
-                            <h1>Let's Learn Hangul!</h1>
-                            <h4>Korean Language Learning Center</h4>
-                            <P>The Best Platform You Can Find To Learn Korean. Thousands of lessons. No credit card needed.</P>
-                            <a href="login.html" class="btn btn-primary">Get Started </a>
-                        </div>
-                        <div class="header__right">
-                            <div class="header_right-image">
-                                <img src="img/header.svg">
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-     <section class="courses">
-                <h2>Popular Courses</h2>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<section class="courses">
+                <h2>Courses</h2>
                 <div class="container courses__Container">
                     <article class="course">
                         <div class="course__image">
@@ -31,7 +13,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 1: How to say "Have to~" in Korean</h4>
                             <P>Learn How to say "Have to~" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Course1.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -42,7 +24,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 2: Conjugating the ~요 form</h4>
                             <P>Learn Conjugating the ~요 form From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Course2.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -53,7 +35,7 @@
                         <div class="course__Info">
                         <h4>Learn Korean Ep. 3: "Want~" and "Want to~" 원하다 vs. ~고 싶다</h4>
                         <p>Learn "Want~" and "Want to~" From Teacher Billy Korean</p>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Course3.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -64,7 +46,7 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 4: "To be" and "To exist" | 이다 vs. 있다</h4>
                             <P>Learn "To be" and "To exist" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Course4.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
@@ -75,14 +57,12 @@
                         <div class="course__Info">
                             <h4>Learn Korean Ep. 5: "Also" and "Again" | 도, 또, and 다시</h4>
                             <P>Learn "Also" and "Again" From Teacher Billy Korean</P>
-                        <a href="login.html" class="btn btn-primary">Learn More</a>
+                        <a href="Course5.aspx" class="btn btn-primary">Learn More</a>
                         </div>
                     </article>
 
+                    <h4>*Non-Student Can Only Access 3 Courses*</h4>
+                     <div class="signup__login"><a href="Login.aspx"><u>Login To Access More Courses</u></a></div>
                 </div>
                </section> 
-                
-                <!--================================================== End of Course ==================================================-->
-
-
 </asp:Content>

@@ -49,7 +49,7 @@
                     <ul class="nav__menu">
                         <a class="active" href="Homepage.aspx">Home</a>
                         <a href="about.aspx">About</a>
-                        <a href="course.aspx">Course</a>
+                        <a href="NotStudent_courses.aspx">Course</a>
                         <a href="Login.aspx">Log In</a>
                         </ul>
                         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -79,10 +79,9 @@
                     </div>
                     <div class="footer__2">
                         <ul class="permalinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Homepage.aspx">Home</a></li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="NotStudent_courses.aspx">Courses</a></li>
                     </ul>
                     </div>
                     <div class="footer__3">
@@ -113,7 +112,7 @@
 
                 </div>
                 <div class="footer__copyright">
-                    <small>Copyright &copy; Korea</small> 
+                    <small>Copyright &copy; Let's Learn Hangul!</small> 
                 </div>
                 </footer>
     <!-- Footer End -->
@@ -126,7 +125,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
 

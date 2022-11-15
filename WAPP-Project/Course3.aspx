@@ -3,14 +3,17 @@
     Let's Learn Hangul! - Learn Korean Ep. 3
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="courses">
+        <div class="course_title">
     <h1>Learn Korean Ep. 3: “Want~” and “Want to~”</h1>
 
-    <br />
+    </div>
+        <div class="course_video">
 
+        
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cNh-Nb7m97k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="True"></iframe>
 
-    <br />
-
+</div>
     <p>They might sound similar at first glance, but “want” and “want to” are two separate
     grammar forms in Korean. In English we could either say “I <b>want</b> an apple,” or “I <b>want to</b>
     eat an apple.” Notice that “want” is followed by a noun that the speaker desires, and “want
@@ -27,8 +30,7 @@
     ends in a consonant, or “를” if the noun ends in a vowel. I put the object marker in
     parentheses because it is optional when speaking casually – just know that it normally
     should be there for speaking politely. Finally, the verb “to want” is “원하다.” Conjugate this
-    verb any way you’d like.
-    </p>
+    verb any way you’d like.    </p>
 
     <br />
 
@@ -150,4 +152,5 @@
     distinguish them as well, and that this lesson can be helpful. As always, I recommend that
     you practice these concepts on your own, because practicing will make these concepts
     become easier and easier.</p>
+        </section>
     </asp:Content>

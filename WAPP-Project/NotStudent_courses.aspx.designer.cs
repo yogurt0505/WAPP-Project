@@ -11,7 +11,7 @@ namespace WAPP_Project
 {
 
 
-    public partial class Homepage
+    public partial class Courses
     {
     }
 }
