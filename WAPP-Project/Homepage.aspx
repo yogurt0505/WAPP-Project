@@ -79,17 +79,6 @@
                         </div>
                     </article>
 
-                    <article class="course">
-                        <div class="course__image">
-                            <img src="./img/LK6.jpg">
-                        </div>
-                        <div class="course__Info">
-                            <h4>Learn Korean Ep. 6: "Already" | 이미 & 벌써</h4>                  
-                            <p>Learn "Already" From Teacher Billy Korean</p>
-                            <a href="login.html" class="btn btn-primary">Learn More</a>
-                        </div>
-                        
-                    </article>
                 </div>
                </section> 
                 

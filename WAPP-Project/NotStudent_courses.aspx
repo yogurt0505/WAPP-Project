@@ -61,7 +61,8 @@
                         </div>
                     </article>
 
-                    <h4>*Non-Student Can Only Access 5 Courses</h4>
+                    <h4>*Non-Student Can Only Access 3 Courses*</h4>
+                     <div class="signup__login"><a href="Login.aspx"><u>Login To Access More Courses</u></a></div>
                 </div>
                </section> 
 </asp:Content>
