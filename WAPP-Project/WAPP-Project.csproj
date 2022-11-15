@@ -113,6 +113,7 @@
     <Content Include="Course3.aspx" />
     <Content Include="Course4.aspx" />
     <Content Include="Course5.aspx" />
+    <Content Include="Course6.aspx" />
     <Content Include="NotStudent_courses.aspx" />
     <Content Include="css\style.css" />
     <Content Include="DeleteCourse.aspx" />
@@ -312,6 +313,13 @@
     </Compile>
     <Compile Include="Course5.aspx.designer.cs">
       <DependentUpon>Course5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course6.aspx.cs">
+      <DependentUpon>Course6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course6.aspx.designer.cs">
+      <DependentUpon>Course6.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotStudent_courses.aspx.cs">
       <DependentUpon>NotStudent_courses.aspx</DependentUpon>
