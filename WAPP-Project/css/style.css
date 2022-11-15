@@ -543,7 +543,7 @@ footer ul li {
 }
 
 input, textarea {
-    width: auto;
+    width: 90%;
     padding: 1rem;
     background: var(--color-bg);
     color: var(--color-white);

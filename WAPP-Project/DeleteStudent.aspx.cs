@@ -11,27 +11,27 @@ using System.Web.UI.WebControls;
 
 namespace WAPP_Project
 {
-    public partial class DeleteCourse : System.Web.UI.Page
+    public partial class DeleteStudent : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-                string CourseID = Request.QueryString["Id"];
-                int intTest = Convert.ToInt32(CourseID);
+                string StudentID = Request.QueryString["Id"];
+                int intTest = Convert.ToInt32(StudentID);
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-                string query = "DELETE FROM [Course] WHERE CourseID=@CourseID";
+                string query = "DELETE FROM [Student] WHERE StudentID=@StudentID";
 
-                
+
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@CourseID", intTest);
+                cmd.Parameters.AddWithValue("@StudentID", intTest);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
 
-                Response.Redirect("AdminViewCourse.aspx");
+                Response.Redirect("AdminViewStudent.aspx");
                 con.Close();
 
             }

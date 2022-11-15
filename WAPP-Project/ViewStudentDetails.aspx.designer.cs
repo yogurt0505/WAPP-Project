@@ -15,13 +15,13 @@ namespace WAPP_Project
     {
 
         /// <summary>
-        /// ViewImg control.
+        /// txt_userid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ViewImg;
+        protected global::System.Web.UI.WebControls.TextBox txt_userid;
 
         /// <summary>
         /// txt_firstname control.
@@ -49,5 +49,23 @@ namespace WAPP_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList radio_gender;
+
+        /// <summary>
+        /// txt_username control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_username;
+
+        /// <summary>
+        /// txt_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_email;
     }
 }
