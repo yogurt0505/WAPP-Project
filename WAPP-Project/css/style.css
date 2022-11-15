@@ -209,7 +209,7 @@ header {
 }
 
 .course_Info p {
-    margin: 1.2rem 0 2 rem;
+    margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
 }
 
@@ -548,6 +548,159 @@ input, textarea {
     background-color: antiquewhite;
     border-radius: 10px;
 }
+
+
+.profile__picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.nav__profile {
+    position: relative;
+    cursor: pointer;
+}
+
+    .nav__profile ul {
+        position: absolute;
+        top: 125%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3rem 3rem rgba(0,0,0,0.4);
+        background-color: var(--color-bg2);
+        visibility: hidden;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .nav__profile:hover > ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav__profile ul li a {
+        padding: 1rem;
+        background: var(--color-success);
+        color: var(--color-white);
+        display: block;
+        width: 100%;
+    }
+
+    .nav__profile ul li:last-child a {
+        background: var(--color-danger);
+        color: var(--color-white);
+    }
+
+.dashboard {
+    margin-top: 6rem;
+}
+
+.dashboard__container {
+    display: grid;
+    grid-template-columns: 14rem auto;
+    gap: 1rem;
+    background: var(--color-bg2);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 0px 8px 30px var(--color-black);
+}
+
+.dashboard aside a {
+    background-color: var(--color-primary);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.6rem;
+}
+
+.dashboard aside ul li:not(:last-child) a {
+    border-bottom: 1px solid var(--color-black);
+}
+
+.dashboard aside a:hover {
+    background: var(--color-bg1);
+}
+
+.dashboard aside a.active {
+    background-color: var(--color-bg1);
+}
+
+.dashboard main {
+    margin-left: 1.5rem;
+}
+
+    .dashboard main h2 {
+        margin-bottom: 0 0 2rem 0;
+        line-height: 1;
+    }
+
+    .dashboard main table {
+        width: 100%;
+        text-align: left;
+    }
+
+        .dashboard main table th {
+            background: var(--color-darkblue);
+            padding: 0.8rem;
+            color: var(--color-white);
+        }
+
+        .dashboard main table td {
+            padding: 0.8rem;
+            border-bottom: 1px solid var(--color-bg);
+        }
+
+.btn.edit {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn.delete {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+form {
+    flex-direction: column;
+}
+
+.edit__section {
+    height: 50px;
+}
+
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+    main .insights > div {
+        background-color: var(--color-primary);
+        padding: 1.2rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        transition: all 300ms ease;
+    }
+
+        main .insights > div:hover {
+            box-shadow: 0 2rem 3.5rem var(--color-black);
+        }
+
+        main .insights > div span {
+            background: var(--color-bg1);
+            padding: 0.5rem;
+            border-radius: 50%;
+            color: var(--color-white);
+            font-size: 1rem;
+        }
+
 
 /* ============================== Media Queries ============================== */
 
