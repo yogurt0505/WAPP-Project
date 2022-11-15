@@ -111,7 +111,9 @@
     <Content Include="Course1.aspx" />
     <Content Include="Course2.aspx" />
     <Content Include="Course3.aspx" />
-    <Content Include="DeleteStudent.aspx" />
+    <Content Include="Course4.aspx" />
+    <Content Include="Course5.aspx" />
+    <Content Include="Course6.aspx" />
     <Content Include="NotStudent_courses.aspx" />
     <Content Include="css\style.css" />
     <Content Include="DeleteCourse.aspx" />
@@ -297,13 +299,6 @@
     </Compile>
     <Compile Include="Course3.aspx.designer.cs">
       <DependentUpon>Course3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteStudent.aspx.cs">
-      <DependentUpon>DeleteStudent.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DeleteStudent.aspx.designer.cs">
-      <DependentUpon>DeleteStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotStudent_courses.aspx.cs">
       <DependentUpon>NotStudent_courses.aspx</DependentUpon>
