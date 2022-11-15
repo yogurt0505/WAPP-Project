@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NotStudent_courses.aspx.cs" Inherits="WAPP_Project.Courses" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Student_courses.aspx.cs" Inherits="WAPP_Project.Courses" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     Let's Learn Hangul! - Learn Korean Ep. 3
 </asp:Content>
@@ -39,10 +39,39 @@
                         </div>
                     </article>
 
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/LK4.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Korean Ep. 4: "To be" and "To exist" | 이다 vs. 있다</h4>
+                            <P>Learn "To be" and "To exist" From Teacher Billy Korean</P>
+                        <a href="Course4.aspx" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
 
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/LK5.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Korean Ep. 5: "Also" and "Again" | 도, 또, and 다시</h4>
+                            <P>Learn "Also" and "Again" From Teacher Billy Korean</P>
+                        <a href="Course5.aspx" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
+                    <article class="course">
+                        <div class="course__image">
+                            <img src="./img/LK6.jpg">
+                        </div>
+                        <div class="course__Info">
+                            <h4>Learn Korean Ep. 6: "Already" | 이미 & 벌써</h4>
+                            <P>Learn "Already" From Teacher Billy Korean</P>
+                        <a href="Course6.aspx" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </article>
 
-                    <h4>*Non-Student Can Only Access 3 Courses*</h4>
-                     <div class="signup__login"><a href="Login.aspx"><u>Login To Access More Courses</u></a></div>
+                    
                 </div>
                </section> 
 </asp:Content>
