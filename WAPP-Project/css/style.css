@@ -608,7 +608,7 @@ input, textarea {
 
     .nav__profile ul li a {
         padding: 1rem;
-        background: var(--color-success);
+        background: var(--color-primary);
         color: var(--color-white);
         display: block;
         width: 100%;
