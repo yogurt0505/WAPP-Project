@@ -54,21 +54,25 @@
         </div>
             <div class="container edit__section-container">
 
-                 <asp:PlaceHolder ID="ViewImg" runat="server"></asp:PlaceHolder>
+                <asp:TextBox runat="server" ID="txt_userid" Visible="false"></asp:TextBox>
                 
-                <label class="form-label" for="txt_firstname">First Name</label> 
-                    <asp:TextBox runat="server" ID="txt_firstname" class="input"></asp:TextBox>
+                <label class="form-label" for="txt_firstname">First Name</label> <br />
+                    <asp:TextBox runat="server" ID="txt_firstname" class="input"></asp:TextBox> <br />
 
-            <label class="form-label" for="txt_lastname">Last Name</label> 
-                    <asp:TextBox runat="server" ID="txt_lastname" class="input"></asp:TextBox>
+            <label class="form-label" for="txt_lastname">Last Name</label> <br />
+                    <asp:TextBox runat="server" ID="txt_lastname" class="input"></asp:TextBox><br />
 
-              <label class="form-label" for="radio_gender" >Gender</label>
+              <label class="form-label" for="radio_gender" >Gender</label><br />
                     <asp:RadioButtonList ID="radio_gender" runat="server">
                     <asp:ListItem Value="Male">Male</asp:ListItem>
                     <asp:ListItem Value="Female">Female</asp:ListItem>
                     </asp:RadioButtonList><br />
 
-                
+                <label class="form-label" for="txt_username">User Name</label> <br />
+                    <asp:TextBox runat="server" ID="txt_username" class="input"></asp:TextBox><br />
+
+                 <label class="form-label" for="txt_email">Email</label> <br />
+                    <asp:TextBox runat="server" ID="txt_email" class="input"></asp:TextBox><br />
                            
             </div>
         </main>
