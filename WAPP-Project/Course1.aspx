@@ -29,7 +29,9 @@
         </ul>
         Let’s go over each of these concepts one at a time.
     </div>
+
     <br />
+
     <h3>“Need to~” or “Have to~” <br />verb stem + (아/어/etc) + 야 되다</h3>
     <p>This form can either mean “need to~” or “have to~.” Although “need to~” and “have to~”
     have a different feeling in English, there’s no need to distinguish between the two in Korean.</p>
