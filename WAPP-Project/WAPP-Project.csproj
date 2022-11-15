@@ -116,6 +116,7 @@
     <Content Include="Course5.aspx" />
     <Content Include="Course6.aspx" />
     <Content Include="DeleteStudent.aspx" />
+    <Content Include="Student_courses.aspx" />
     <Content Include="NotStudent_courses.aspx" />
     <Content Include="css\style.css" />
     <Content Include="DeleteCourse.aspx" />
@@ -315,6 +316,13 @@
     </Compile>
     <Compile Include="DeleteStudent.aspx.designer.cs">
       <DependentUpon>DeleteStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_courses.aspx.cs">
+      <DependentUpon>Student_courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_courses.aspx.designer.cs">
+      <DependentUpon>Student_courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotStudent_courses.aspx.cs">
       <DependentUpon>NotStudent_courses.aspx</DependentUpon>
