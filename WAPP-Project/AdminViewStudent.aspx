@@ -29,19 +29,14 @@
                         <h5>Student</h5>
                     </a>
                 </li>
+                
                 <li>
-                    <a href="admin_feedback.html">
+                    <a href="AdminViewFeedback.aspx">
                         <i class="uil uil-edit"></i>
                         <h5>Feedback</h5>
                     </a>
                 </li>
-                <li>
-                    <a href="admin_password.html">
-                        <i class="uil uil-key-skeleton"></i>
-                        <h5>Change Password</h5>
-                    </a>
-                </li>
-                
+              
             </ul>
         </aside>
 

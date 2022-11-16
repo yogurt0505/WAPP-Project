@@ -11,7 +11,7 @@
     <div class="container dashboard__container">
         <aside>
             <ul>
-                <li>
+                 <li>
                     <a href="AdminDashboard.aspx">
                         <i class="uil uil-dashboard"></i>
                         <h5>Dashboard</h5>
@@ -24,23 +24,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="admin_student.html">
+                    <a href="AdminViewStudent.aspx">
                         <i class="uil uil-user"></i>
                         <h5>Student</h5>
                     </a>
                 </li>
                 <li>
-                    <a href="admin_feedback.html">
+                    <a href="AdminViewFeedback.aspx">
                         <i class="uil uil-edit"></i>
                         <h5>Feedback</h5>
                     </a>
                 </li>
-                <li>
-                    <a href="admin_password.html">
-                        <i class="uil uil-key-skeleton"></i>
-                        <h5>Change Password</h5>
-                    </a>
-                </li>
+               
                 
             </ul>
         </aside>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminViewFeedback.aspx.cs" Inherits="WAPP_Project.AdminViewFeedback" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="AdminViewFeedback.aspx.cs" Inherits="WAPP_Project.AdminViewFeedback" %>
 <asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
     Admin Dashboard - View Feedback
 </asp:Content>
@@ -35,27 +35,23 @@
                         <h5>Feedback</h5>
                     </a>
                 </li>
-                <li>
-                    <a href="admin_password.html">
-                        <i class="uil uil-key-skeleton"></i>
-                        <h5>Change Password</h5>
-                    </a>
-                </li>
+              
                 
             </ul>
         </aside>
 
        <main>
-            <h2>Manage Student</h2>
-            <asp:TextBox ID="searchkey" runat="server" class="input"></asp:TextBox>
-           <br />
-           <asp:Button ID="btn_search" runat="server" Text="Search" class="btn" OnClick="Search_Click" />
+            <h2>View Feedbacks</h2>
+            
             <table>
                 <thead>
                     <tr>
-                        <th>Feedback Content</th>
-                        <th>Student</th>
+                        <th>Feedback List</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Delete</th>
                     </tr>
+                
                 </thead>
                 <tbody>
                      <asp:PlaceHolder ID="ViewFeedback" runat="server"></asp:PlaceHolder>

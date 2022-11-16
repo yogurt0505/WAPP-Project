@@ -15,30 +15,12 @@ namespace WAPP_Project
     {
 
         /// <summary>
-        /// searchkey control.
+        /// ViewDashboard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchkey;
-
-        /// <summary>
-        /// btn_search control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_search;
-
-        /// <summary>
-        /// ViewCourse control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ViewCourse;
+        protected global::System.Web.UI.WebControls.PlaceHolder ViewDashboard;
     }
 }
