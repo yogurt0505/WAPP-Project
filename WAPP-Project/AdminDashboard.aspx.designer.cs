@@ -15,12 +15,30 @@ namespace WAPP_Project
     {
 
         /// <summary>
-        /// ViewDashboard control.
+        /// ViewDashboard1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ViewDashboard;
+        protected global::System.Web.UI.WebControls.PlaceHolder ViewDashboard1;
+
+        /// <summary>
+        /// ViewDashboard2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ViewDashboard2;
+
+        /// <summary>
+        /// ViewDashboard3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ViewDashboard3;
     }
 }

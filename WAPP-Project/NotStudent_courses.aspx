@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NotStudent_courses.aspx.cs" Inherits="WAPP_Project.Courses" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NotStudent_courses.aspx.cs" Inherits="WAPP_Project.NotStudent_courses" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     Let's Learn Hangul! - Learn Korean Ep. 3
 </asp:Content>

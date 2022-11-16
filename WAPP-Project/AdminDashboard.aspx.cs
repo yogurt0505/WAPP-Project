@@ -19,6 +19,8 @@ namespace WAPP_Project
             {
 
                 StringBuilder html = new StringBuilder();
+                StringBuilder html2 = new StringBuilder();
+                StringBuilder html3 = new StringBuilder();
 
                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
@@ -34,34 +36,11 @@ namespace WAPP_Project
                             {
                                 sda.Fill(dt);
                                 int StudentNumber = dt.Rows.Count;
-                                html.Append("<div class=\"student\">");
-                                html.Append("< span class=\"material - symbols - outlined\">person</span>");
-                                html.Append(" <div class=\"middle\"> < div class=\"left\">");
-                                html.Append("< h3>Total Student Register</h3>< h1 > " + StudentNumber + "</ h1 > ");
-                                html.Append(" </div></ div >< small class=\"text-muted\">Target Register Student  : 50</small> </div>");
 
-                                using (SqlCommand cmd2 = new SqlCommand("SELECT * FROM [Course]"))
-                                {
+                                html.Append("<h1> " + StudentNumber + "</h1> ");
 
-                                    cmd2.Connection = con;
-
-                                    sda.SelectCommand = cmd2;
-                                    using (DataTable dt2 = new DataTable())
-                                    {
-                                        sda.Fill(dt2);
-                                        int CourseNumber = dt2.Rows.Count;
-
-                                        html.Append("<div class=\"insights\"> <div class=\"courses\">");
-                                        html.Append("< span class=\"material - symbols - outlined\">book</span>");
-                                        html.Append(" <div class=\"middle\"> < div class=\"left\">");
-                                        html.Append("< h3>Total Course Created</h3>< h1 > " + CourseNumber + "</ h1 > ");
-                                        html.Append(" </div></ div >< small class=\"text-muted\">Target Course Created  : 50</small> </div> </div>");
-
-                                        con.Close();
-
-                                    }
-
-                                }
+                                ViewDashboard1.Controls.Add(new Literal { Text = html.ToString() });
+                                con.Close();
 
                                 foreach (DataRow row in dt.Rows)
                                 {
@@ -69,59 +48,77 @@ namespace WAPP_Project
                                     string LastName = row["LastName"].ToString();
                                     string UserID = row["UserID"].ToString();
 
+                                    html3.Append("<td>" + FirstName + "</td>");
+                                    html3.Append("<td>" + LastName + "</td>");
+                                    con.Close();
 
-                                    using (SqlCommand cmd3 = new SqlCommand("SELECT * FROM [User] WHERE UserID=@UserID"))
+                                    using (SqlCommand cmd3 = new SqlCommand("SELECT UserEmail FROM [User] WHERE UserID=@UserID AND UserRole=@UserRole"))
                                     {
 
                                         cmd3.Connection = con;
 
                                         sda.SelectCommand = cmd3;
                                         cmd3.Parameters.AddWithValue("@UserID", UserID);
+                                        cmd3.Parameters.AddWithValue("@UserRole", "Student");
                                         using (DataTable dt3 = new DataTable())
                                         {
                                             sda.Fill(dt3);
-
-                                            html.Append("<div class=\"recent - register\">");
-                                            html.Append("<h1>Recent Register Student</h1>< table >< thead ><tr> ");
-                                            html.Append(" <th> First Name </th> ");
-                                            html.Append(" <th> Last Name </th> ");
-                                            html.Append(" <th> Email </th> ");
-                                            html.Append(" <th> Phone Number </th></tr></thead> ");
-                                            html.Append("<tbody><tr>");
 
                                             foreach (DataRow row3 in dt3.Rows)
                                             {
                                                 string Email = row3["UserEmail"].ToString();
 
 
-                                                
-                                                html.Append("<td>" + FirstName + "</td>");
-                                                html.Append("<td>" + LastName + "</td>");
-                                                html.Append("<td>" + Email + "</td>");
-                                              
-                                               
+                                                html3.Append("<td>" + Email + "</td>");
+                                                html3.Append("</tr></tbody>");
+                                                con.Close();
+
                                             }
-                                            html.Append("</tr></tbody></table></div>");
-                                            con.Close();
-                                            ViewDashboard.Controls.Add(new Literal { Text = html.ToString() });
+                                            ViewDashboard3.Controls.Add(new Literal { Text = html3.ToString() });
                                         }
 
                                     }
+                                    
+                                    
                                 }
-
+                                
 
                             }
                         }
                     }
+                }
+                string constr2 = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
+                using (SqlConnection con2 = new SqlConnection(constr2))
+                {
+                    using (SqlCommand cmd2 = new SqlCommand("SELECT * FROM [Course]"))
+                    {
+                        using (SqlDataAdapter sda2 = new SqlDataAdapter())
+                        {
 
+                            cmd2.Connection = con2;
+                            sda2.SelectCommand = cmd2;
+                            using (DataTable dt2 = new DataTable())
+                            {
+                                sda2.Fill(dt2);
+                                int CourseNumber = dt2.Rows.Count;
 
+                                html2.Append("<h1> " + CourseNumber + "</h1> ");
+                                ViewDashboard2.Controls.Add(new Literal { Text = html2.ToString() });
+
+                                con2.Close();
+
+                            }
+                        }
+
+                    }
+                }
+
+                 
                 }
             }
         }
      
-       
-
+   
         
     }
-}

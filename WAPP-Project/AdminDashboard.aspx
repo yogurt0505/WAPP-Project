@@ -38,11 +38,60 @@
                
             </ul>
         </aside>
-
+          
         <main>
             <h1>Dashboard</h1>
-            <asp:PlaceHolder ID="ViewDashboard" runat="server"></asp:PlaceHolder>
+            <div class="insights">
+
+                <div class="courses">
+                    <span class="material-symbols-outlined">person</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Student Register</h3>
+                            
+                <asp:PlaceHolder ID="ViewDashboard1" runat="server">
+                    </asp:PlaceHolder>
+
+                        </div>
+                    </div>
+                    <small class="text-muted">Target Register Student  : 50</small>
+                </div>
+                
+
+
+                <div class="courses">
+                    <span class="material-symbols-outlined">book</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Register Course</h3>
+                           
+                            <asp:PlaceHolder ID="ViewDashboard2" runat="server">
+                    </asp:PlaceHolder>
+
+                        </div>
+                    </div>
+                    <small class="text-muted">Target Register Course  : 50</small>
+                </div>
+            </div>
+
+            <div class="recent-register">
+                <h1>Recent Register Student</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                           <asp:PlaceHolder ID="ViewDashboard3" runat="server">
+                    </asp:PlaceHolder>
+                      </tbody>
+                </table>
+            </div>
         </main>
+              
            </div>
 </section>
     

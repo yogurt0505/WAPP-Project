@@ -27,11 +27,12 @@ namespace WAPP_Project
                 {
                     string FullName = row["FirstName"].ToString() + " " + row["LastName"].ToString();
                     string StudentID = row["StudentID"].ToString();
+                    string UserID = row["UserID"].ToString();
 
 
                     html.Append("<td>" + FullName + "</td>");
                     html.Append("<td><a href = \"ViewStudentDetails.aspx?Id=" + StudentID + "\" class= \"btn edit\"> View </a></td>");
-                    html.Append("<td><a onClick=\"return confirm('Delete this account?')\" href = \"DeleteStudent.aspx?Id=" + StudentID + "\" class= \"btn delete\"> Delete </a></td>");
+                    html.Append("<td><a onClick=\"return confirm('Delete this account?')\" href = \"DeleteStudent.aspx?Id=" + UserID + "\" class= \"btn delete\"> Delete </a></td>");
                     html.Append("</tr>");
 
                 }

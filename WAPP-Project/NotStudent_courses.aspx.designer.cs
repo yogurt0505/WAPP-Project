@@ -11,7 +11,7 @@ namespace WAPP_Project
 {
 
 
-    public partial class Courses
+    public partial class NotStudent_courses
     {
     }
 }

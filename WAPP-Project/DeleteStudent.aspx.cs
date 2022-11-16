@@ -17,19 +17,27 @@ namespace WAPP_Project
         {
             try
             {
-                string StudentID = Request.QueryString["Id"];
-                int intTest = Convert.ToInt32(StudentID);
+                string UserID = Request.QueryString["Id"];
+                int intTest = Convert.ToInt32(UserID);
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-                string query = "DELETE FROM [Student] WHERE StudentID=@StudentID";
-
-
+                string query = "DELETE FROM [Student] WHERE UserID=@UserID";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@StudentID", intTest);
+                cmd.Parameters.AddWithValue("@UserID", intTest);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
+                con.Close();
+
+                string query2 = "DELETE FROM [User] WHERE UserID=@UserID";
+
+                SqlCommand cmd2 = new SqlCommand(query2, con);
+
+                cmd2.Parameters.AddWithValue("@UserID", intTest);
+
+                con.Open();
+                cmd2.ExecuteNonQuery();
 
                 Response.Redirect("AdminViewStudent.aspx");
                 con.Close();
