@@ -9,9 +9,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace WAPP_Project
 {
-    public partial class CreateCourse : System.Web.UI.Page
+    public partial class AdminAddCourse : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -51,7 +52,7 @@ namespace WAPP_Project
                     {
                         lbl_msg.Text = "Invalid File. Please upload an image file with extension " + string.Join(", ", validFileTypes);
                     }
-                     //end validation
+                    //end validation
 
                     else
                     {

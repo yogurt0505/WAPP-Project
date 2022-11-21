@@ -15,15 +15,6 @@ namespace WAPP_Project
     {
 
         /// <summary>
-        /// SqlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
         /// txt_firstname control.
         /// </summary>
         /// <remarks>
@@ -69,12 +60,12 @@ namespace WAPP_Project
         protected global::System.Web.UI.WebControls.Label lbl_msg;
 
         /// <summary>
-        /// btn_register control.
+        /// btn_editstudent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_register;
+        protected global::System.Web.UI.WebControls.Button btn_editstudent;
     }
 }

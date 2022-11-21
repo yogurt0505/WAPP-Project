@@ -15,10 +15,11 @@ namespace WAPP_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!this.IsPostBack)
             {
-                string UserID = Request.QueryString["Id"];
-                int intTest = Convert.ToInt32(UserID);
+                string UserName = (Session["UserName"]).ToString();
+                int UserID = Convert.ToInt16(Session["UserID"]);
+
                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
                 using (SqlConnection con = new SqlConnection(constr))
@@ -29,7 +30,7 @@ namespace WAPP_Project
                         {
                             cmd.Connection = con;
                             sda.SelectCommand = cmd;
-                            cmd.Parameters.AddWithValue("@UserID", intTest);
+                            cmd.Parameters.AddWithValue("@UserID", UserID);
                             using (DataTable dt = new DataTable())
                             {
                                 sda.Fill(dt);
@@ -50,11 +51,12 @@ namespace WAPP_Project
             }
         }
 
-       protected void Edit_Click(object sender, EventArgs e)
+        protected void Edit_Click(object sender, EventArgs e)
         {
             //Setup database connection
-            string UserID = Request.QueryString["Id"];
-            int intTest = Convert.ToInt32(UserID);
+            string UserName = (Session["UserName"]).ToString();
+            int UserID = Convert.ToInt16(Session["UserID"]);
+
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             String FirstName = txt_firstname.Text;
             String LastName = txt_lastname.Text;
@@ -96,11 +98,13 @@ namespace WAPP_Project
                         cmd1.Parameters.AddWithValue("@LastName", LastName);
                         cmd1.Parameters.AddWithValue("@Gender", Gender);
                         cmd1.Parameters.AddWithValue("@ProfilePic", ProfilePic);
-                        cmd1.Parameters.AddWithValue("@UserID", intTest);
+                        cmd1.Parameters.AddWithValue("@UserID", UserID);
 
                         cmd1.ExecuteNonQuery();
                         con.Close();
-                        lbl_msg.Text = "Profile Edited Succesfully.";
+
+                        Response.Write("<script>alert('Profile updated successfully!');window.location.href='EditStudent.aspx';</script>");
+
 
                     }
                 }
@@ -114,11 +118,12 @@ namespace WAPP_Project
                     cmd2.Parameters.AddWithValue("@FirstName", FirstName);
                     cmd2.Parameters.AddWithValue("@LastName", LastName);
                     cmd2.Parameters.AddWithValue("@Gender", Gender);
-                    cmd2.Parameters.AddWithValue("@UserID", intTest);
+                    cmd2.Parameters.AddWithValue("@UserID", UserID);
 
                     cmd2.ExecuteNonQuery();
                     con.Close();
-                    lbl_msg.Text = "Profile Edited Successfully!";
+                    Response.Write("<script>alert('Profile updated successfully!');window.location.href='EditStudent.aspx';</script>");
+
                 }
 
             }
@@ -126,10 +131,6 @@ namespace WAPP_Project
             {
                 Response.Write("Error occured: " + ex.ToString());
             }
-
-
-
-
 
         }
     }

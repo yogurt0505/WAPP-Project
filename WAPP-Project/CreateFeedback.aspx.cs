@@ -45,7 +45,7 @@ namespace WAPP_Project
                 cmd1.ExecuteNonQuery();
                     con.Close();
 
-                Response.Write("<script>alert('Feedback submitted!');window.location.href='CreateFeedback.aspx';</script>"); lbl_msg.Text = "Course created successfully!";
+                lbl_msg.Text = "Feedback submitted successfully!";
             }
 
             

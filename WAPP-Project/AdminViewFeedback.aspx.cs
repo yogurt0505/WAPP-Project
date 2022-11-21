@@ -67,11 +67,11 @@ namespace WAPP_Project
 
                                                 con.Close();
                                             }
-                                            ViewFeedback.Controls.Add(new Literal { Text = html.ToString() });
                                         }
 
                                     }
                                 }
+                                ViewFeedback.Controls.Add(new Literal { Text = html.ToString() });
 
 
                             }

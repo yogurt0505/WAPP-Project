@@ -70,18 +70,18 @@ namespace WAPP_Project
 
 
                                                 html3.Append("<td>" + Email + "</td>");
-                                                html3.Append("</tr></tbody>");
+                                                html3.Append("</tr>");
                                                 con.Close();
 
                                             }
-                                            ViewDashboard3.Controls.Add(new Literal { Text = html3.ToString() });
+                                           
                                         }
 
                                     }
-                                    
-                                    
+                                   
+
                                 }
-                                
+                                ViewDashboard3.Controls.Add(new Literal { Text = html3.ToString() });
 
                             }
                         }

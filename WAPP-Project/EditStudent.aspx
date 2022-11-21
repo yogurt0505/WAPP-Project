@@ -1,54 +1,84 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditStudent.aspx.cs" Inherits="WAPP_Project.EditStudent" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    Student Dashboard - Edit Profile
+</asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
-     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
 
-    
-        <div class="main__login">
-            <div class="left__login">
-                <h1>Let's Learn Hangul!</h1>
-                <img src="./img/login.svg" alt="login">
-            </div>
-            <div class="right__login">
-                <div class="card__login">
-                    <h1>EDIT</h1>
-                    
-                    <div class="textfield">
-                    <label class="form-label" for="txt_firstname">First Name</label> 
-                    <asp:TextBox runat="server" ID="txt_firstname" class="input"></asp:TextBox>
+      
 
-                   </div>
+<section class="dashboard">
+    <div class="container dashboard__container">
+        <aside>
+            <ul>
+                 <li>
+                    <a href="StudentDashboard.aspx">
+                        <i class="uil uil-dashboard"></i>
+                        <h5>Dashboard</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="StudentViewCourse.aspx">
+                        <i class="uil uil-book-alt"></i>
+                        <h5>Course</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="EditStudent.aspx" class="active">
+                        <i class="uil uil-user"></i>
+                        <h5>Edit Profile</h5>
+                    </a>
+                </li>
+                 <li>
+                    <a href="ChangePassword.aspx">
+                        <i class="uil uil-edit"></i>
+                        <h5>Change Password</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="CreateFeedback.aspx">
+                        <i class="uil uil-edit"></i>
+                        <h5>Feedback</h5>
+                    </a>
+                </li>
+               
+            </ul>
+        </aside>
 
-                    <div class="textfield">
-                    <label class="form-label" for="txt_lastname">Last Name</label> 
-                    <asp:TextBox runat="server" ID="txt_lastname" class="input"></asp:TextBox>
+        <main>
+           <h2>Edit Profile</h2>
 
-                   </div>
-
-                   <label class="form-label" for="radio_gender" >Gender</label>
-                    <asp:RadioButtonList ID="radio_gender" runat="server">
-                    <asp:ListItem Value="Male">Male</asp:ListItem>
-                    <asp:ListItem Value="Female">Female</asp:ListItem>
-                    </asp:RadioButtonList><br />
-
-                    <label class="form-label" for="txt_profilepic" >Profile Picture</label>
-                    <asp:FileUpload ID="file_profilepic" runat="server" accept=".png,.jpg,.jpeg,.gif"/>
-
-
-
-
-                    <asp:Label runat="server" ID="lbl_msg" Text=""></asp:Label> <br />
-
-   
-
-                <asp:Button runat="server" ID="btn_register" class="btn__register" OnClick="Edit_Click" text="Edit"></asp:Button>
-                  
-                    <div class="signup__login">Already a member? <a href="register.html"><u>Login Now</u></a></div>
-                </div>
-
+            <div class="container edit__section-container">
                 
-            </div>
-        </div>
+                
+                    <label class="form-label" for="txt_firstname" >First Name</label><br />
+                    <asp:TextBox class="input" runat="server" ID="txt_firstname"></asp:TextBox><br />
 
-  </asp:Content>
+             <label class="form-label" for="txt_lastname" >Last Name</label><br />
+                    <asp:TextBox class="input" runat="server" ID="txt_lastname"></asp:TextBox><br />
+
+              <label class="form-label" for="radio_gender" >Gender</label><br />
+             <asp:RadioButtonList ID="radio_gender" runat="server">
+                <asp:ListItem Value="Male">Male</asp:ListItem>
+                <asp:ListItem Value="Female">Female</asp:ListItem>
+            </asp:RadioButtonList><br />
+
+                       <label class="form-label" for="file_profilepic" >Profile Picture</label><br />
+            <asp:FileUpload ID="file_profilepic" runat="server" accept=".png,.jpg,.jpeg,.gif"/><br />
+
+             
+
+                    <asp:Label runat="server" ID="lbl_msg" Text="" ForeColor="Green"></asp:Label> <br />
+
+                      <asp:Button ID="btn_editstudent"  class="btn edit" runat="server" OnClick="Edit_Click" Text="Update Profile"/>
+
+                           
+            </div>
+        </main>
+              
+           </div>
+</section>
+   
+</asp:Content>
                   
+

@@ -41,7 +41,12 @@
         </aside>
 
        <main>
+            <div class="row">
+            <a href="AdminAddCourse.aspx" runat="server" class="btn prev"> Add Course </a>
+
+                     
             <h2>Manage Course</h2>
+        </div>
             <asp:TextBox ID="searchkey" runat="server" class="input"></asp:TextBox>
            <br />
            <asp:Button ID="btn_search" runat="server" Text="Search" class="btn" OnClick="Search_Click" />

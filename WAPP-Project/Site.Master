@@ -43,15 +43,13 @@
 
        <nav>
                 <div class="container nav__container">
-                    <a href="index.html"><h4>Let's Learn Hangul!</h4></a>
+                    <a href="homepage.aspx"><h4>Let's Learn Hangul!</h4></a>
 
                     
-                    <ul class="nav__menu">
-                        <a class="active" href="Homepage.aspx">Home</a>
-                        <a href="about.aspx">About</a>
-                        <a href="NotStudent_courses.aspx">Course</a>
-                        <a href="Login.aspx">Log In</a>
-                        </ul>
+                    <asp:PlaceHolder ID="ViewNavbar" runat="server">
+                    </asp:PlaceHolder>
+
+
                         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
                         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>  
                 </div>

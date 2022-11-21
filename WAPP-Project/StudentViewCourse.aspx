@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreateFeedback.aspx.cs" Inherits="WAPP_Project.CreateFeedback" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="StudentViewCourse.aspx.cs" Inherits="WAPP_Project.StudentViewCourse" %>
 <asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
-    Student Dashboard - Create Feedback
+    Student Dashboard - View Course
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="StudentViewCourse.aspx">
+                    <a href="StudentViewCourse.aspx" class="active">
                         <i class="uil uil-book-alt"></i>
                         <h5>Course</h5>
                     </a>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="CreateFeedback.aspx" class="active">
+                    <a href="CreateFeedback.aspx">
                         <i class="uil uil-edit"></i>
                         <h5>Feedback</h5>
                     </a>
@@ -44,33 +44,18 @@
                
             </ul>
         </aside>
-
-        <main>
-           <h2>Create Feedback</h2>
-
-            <div class="container edit__section-container">
-                
-                 <label class="form-label" for="txt_fullname" >Full Name</label><br />
-                    <asp:TextBox class="input" runat="server" ID="txt_fullname"></asp:TextBox><br />
-
-             <label class="form-label" for="txt_feedback" >Enter your feedback here:</label><br />
-                    <asp:TextBox class="input" runat="server" ID="txt_feedback" TextMode="MultiLine"></asp:TextBox><br />
-
-             
-
-                    <asp:Label runat="server" ID="lbl_msg" Text="" ForeColor="Green"></asp:Label> <br />
-                
-                <asp:Button runat="server" class="btn edit" ID="btn_feedback" OnClick="Feedback_Click" text="Send Feedback"></asp:Button>
-
-
-                           
+          
+         <main>
+            <h1>Your Courses</h1>
+            <div class="insights">
+                <asp:PlaceHolder ID="ViewCourse" runat="server">
+                    </asp:PlaceHolder>
             </div>
+
         </main>
               
            </div>
 </section>
-   
-</asp:Content>
-                  
+    
 
-             
+</asp:Content>

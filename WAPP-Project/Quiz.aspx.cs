@@ -18,6 +18,7 @@ namespace WAPP_Project
             if (!IsPostBack)
             {
                 string CourseID = Request.QueryString["Id"];
+                int UserID = Convert.ToInt16(Session["UserID"]);
                 int intTest = Convert.ToInt32(CourseID);
                  string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
@@ -31,13 +32,40 @@ namespace WAPP_Project
                                 sda.SelectCommand = cmd;
                                 using (DataTable dt = new DataTable())
                                 {
-                                    sda.Fill(dt);
+                                sda.Fill(dt);
                                 QuestionRepeater.DataSource = dt;
                                 QuestionRepeater.DataBind();
                                 con.Close();
                                 }
                             }
                         
+                    }
+                    try
+                    {
+                        con.Open();
+
+                        StringBuilder html = new StringBuilder();
+                        string query1 = "SELECT Score FROM [Score] WHERE UserID=@UserID AND CourseID=@CourseID";
+                        SqlCommand cmd1 = new SqlCommand(query1, con);
+                        cmd1.Parameters.AddWithValue("@UserID", UserID);
+                        cmd1.Parameters.AddWithValue("@CourseID", CourseID);
+                        SqlDataReader dr2 = cmd1.ExecuteReader();
+                        string Score = "";
+
+                        if (dr2.Read())
+                        {
+                            Score = dr2["Score"].ToString();
+                        }
+                        con.Close();
+
+                        html.Append("<h3>Previous Score: "+Score+"</h3>");
+
+                        ViewPrevScore.Controls.Add(new Literal { Text = html.ToString() });
+                        con.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write("Error occured: " + ex.ToString());
                     }
                 }
             }

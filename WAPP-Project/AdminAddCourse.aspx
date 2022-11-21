@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditCourse.aspx.cs" Inherits="WAPP_Project.EditCourse" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminAddCourse.aspx.cs" Inherits="WAPP_Project.AdminAddCourse" %>
 <asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
-    Admin Dashboard - View Course
+    Admin Dashboard - Add Course
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="AdminViewCourse.aspx"  class="active">
+                    <a href="AdminViewCourse.aspx" class="active">
                         <i class="uil uil-book-alt"></i>
                         <h5>Course</h5>
                     </a>
@@ -26,7 +26,7 @@
                 <li>
                     <a href="AdminViewStudent.aspx">
                         <i class="uil uil-user"></i>
-                        <h5>Student</h5>>
+                        <h5>Student</h5>
                     </a>
                 </li>
                 <li>
@@ -44,11 +44,10 @@
             <a href="AdminViewCourse.aspx" runat="server" class="btn prev">  < Back </a>
 
                      
-            <h2>Edit Courses</h2>
+            <h2>Add New Course</h2>
         </div>
             <div class="container edit__section-container">
-                
-                
+
                     <label class="form-label" for="txt_coursename" >Course Name</label><br />
                     <asp:TextBox class="input" runat="server" ID="txt_coursename"></asp:TextBox><br />
 
@@ -62,7 +61,7 @@
                 <asp:ListItem Value="Advance">Advance</asp:ListItem>
             </asp:RadioButtonList><br />
 
-                       <label class="form-label" for="file_courseimg" >Course Cover Image</label><br />
+                       <label class="form-label" for="txt_coursename" >Course Cover Image</label><br />
             <asp:FileUpload ID="file_courseimg" runat="server" accept=".png,.jpg,.jpeg,.gif"/><br />
 
              <label class="form-label" for="txt_url" >Course URL</label><br />
@@ -71,16 +70,17 @@
 
                     <asp:Label runat="server" ID="lbl_msg" Text="" ForeColor="Green"></asp:Label> <br />
 
+   
 
-                <asp:Button runat="server" class="btn edit" ID="btn_edit" OnClick="Edit_Course_Click" text="Edit Course"></asp:Button>
-
-                           
+                <asp:Button runat="server" ID="btn_create" class="btn edit" OnClick="Create_Course_Click" text="Create Course"></asp:Button>
+                  
             </div>
         </main>
 
            </div>
 </section>
          
-      
+        <div>
+           
+        </div>
  </asp:Content>
-

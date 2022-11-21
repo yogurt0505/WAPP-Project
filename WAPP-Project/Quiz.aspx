@@ -1,22 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Quiz.aspx.cs" Inherits="WAPP_Project.Quiz" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Quiz.aspx.cs" Inherits="WAPP_Project.Quiz" %>
+<asp:Content ID="Title" ContentPlaceHolderID="Title" runat="server" Visible="True">
+    Quiz
+</asp:Content>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Question]"></asp:SqlDataSource>
-
-            <asp:Repeater ID="QuestionRepeater" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" Visible="True">
+    
+<section class="dashboard">
+    <div class="container dashboard__container">
+       <div class="row">
+      <h1>Quiz Section</h1>
+          <asp:PlaceHolder ID="ViewPrevScore" runat="server">
+                    </asp:PlaceHolder>
+       </div>
+                            <asp:Repeater ID="QuestionRepeater" runat="server">
                 <ItemTemplate>
-                    <div class="box">
+                     <div class="insights">
+            <div class="course">
+                        <div class="left" style="text-align: center;">
                         <table>
                             <tr>
-                                <td><%#Eval("Question") %></td>
+                                <td><h1><%#Eval("Question") %></h1></td>
                             </tr>
                             <tr>
                                 <td>
@@ -28,6 +31,7 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <br /><br />
                                     <asp:Label ID="lbl_feedback" runat="server" Text=""></asp:Label>
                                     <asp:Label ID="lbl_selected" runat="server" Text="" Visible="false"></asp:Label>
                                     <br />
@@ -36,13 +40,20 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
+                            
+                </div>
+
+            
+            </div>
                 </ItemTemplate>
             </asp:Repeater>
-
-             <asp:Button runat="server" ID="btn_submit" OnClick="Submit_Answer_Click" text="Submit Answer"></asp:Button>
-                 
+                            
+                   
+             <asp:Button runat="server" class="btn edit" ID="btn_submit" OnClick="Submit_Answer_Click" text="Submit Answer"></asp:Button>
+                
         </div>
-    </form>
-</body>
-</html>
+
+</section>
+    
+
+</asp:Content>

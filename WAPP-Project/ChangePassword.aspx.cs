@@ -28,11 +28,14 @@ namespace WAPP_Project
             String ExistPassword = "";
 
             con.Open();
+            string UserName = (Session["UserName"]).ToString();
+            int UserID = Convert.ToInt16(Session["UserID"]);
 
             //Check duplicated password
-            string query1 = "SELECT UserPassword from [User] WHERE UserID=14";
+            string query1 = "SELECT UserPassword from [User] WHERE UserID=@UserID";
             SqlCommand cmd1 = new SqlCommand(query1, con);
             cmd1.Parameters.AddWithValue("@UserPassword", OldPassword);
+            cmd1.Parameters.AddWithValue("@UserID", UserID);
 
             SqlDataReader dr1 = cmd1.ExecuteReader();
             if (dr1.Read())
@@ -58,37 +61,16 @@ namespace WAPP_Project
             {
                 try
                 {
-                    //Create new account
                     con.Open();
-                    string query2 = "UPDATE [User] SET UserPassword=@NewPassword WHERE UserID=14";
+                    string query2 = "UPDATE [User] SET UserPassword=@NewPassword WHERE UserID=@UserID";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
 
                     cmd2.Parameters.AddWithValue("@NewPassword", NewPassword);
+                    cmd2.Parameters.AddWithValue("@UserID", UserID);
 
                     cmd2.ExecuteNonQuery();
                     con.Close();
-                    lbl_msg.Text = "Account registered successfully!";
-
-                    //Create Student identity
-                    /* con.Open();
-                    string query3 = "SELECT UserID from [User] WHERE UserName=@UserName";
-                    SqlCommand cmd3 = new SqlCommand(query3, con);
-
-                    cmd3.Parameters.AddWithValue("@UserName", UserName);
-
-                    SqlDataReader dr2 = cmd3.ExecuteReader();
-                    if (dr2.Read())
-                    {
-                        CheckID = dr2["UserID"].ToString();
-                    }
-                    con.Close();
-
-                    string query4 = "INSERT INTO [Student] (UserID) values (@UserID)";
-                    con.Open();
-                    SqlCommand cmd4 = new SqlCommand(query4, con);
-                    cmd4.Parameters.AddWithValue("@UserID", CheckID);
-                    cmd4.ExecuteNonQuery();
-                    con.Close(); */
+                    lbl_msg.Text = "Password changed successfully!";
 
                 }
                 catch (Exception ex)
@@ -97,5 +79,6 @@ namespace WAPP_Project
                 }
             }
         }
+
     }
 }

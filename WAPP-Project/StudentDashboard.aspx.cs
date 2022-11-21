@@ -15,77 +15,92 @@ namespace WAPP_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            if (!IsPostBack)
             {
+                string UserName = (Session["UserName"]).ToString();
+                int UserID = Convert.ToInt16(Session["UserID"]);
 
-                string searchkey = Request.QueryString["SearchKey"];
-                DataTable dt = this.GetData(searchkey);
+                //Get session info
                 StringBuilder html = new StringBuilder();
+                StringBuilder html2 = new StringBuilder();
+                StringBuilder html3 = new StringBuilder();
 
-                string ImgHolder = "";
+                string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-                foreach (DataRow row in dt.Rows)
+                using (SqlConnection con = new SqlConnection(constr))
                 {
-                    string CourseImg = row["CourseImg"].ToString();
-                    string CourseName = row["CourseName"].ToString();
-                    string CourseCategory = row["CourseCategory"].ToString();
-                    string CourseURL = row["CourseURL"].ToString();
-                    string CourseDesc = row["CourseDesc"].ToString();
-                    string CourseID = row["CourseID"].ToString();
-
-                    if (CourseImg == "")
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM [Course]"))
                     {
-                        ImgHolder = "noimg.jpg";
-                    }
-                    else
-                    {
-                        ImgHolder = CourseImg;
-                    }
-
-                    html.Append("<div class=\"box\">");
-
-                    html.Append("<img src=\"upload/" + ImgHolder + "\" width=\"100px\" style=\"float:right\">");
-                    html.Append("<h3>" + CourseName + "</h3>");
-                    html.Append("Phone Number:<br>" + CourseDesc + "<br><br>");
-                    html.Append("Email:<br>" + CourseCategory + "<br><br>");
-                    html.Append("Home Address:<br>" + CourseURL + "<br><br>");
-
-                    html.Append("<a href=\"" + CourseURL + "\">Learn</a> ");
-                    html.Append("<a href=\"Quiz.aspx?Id=" + CourseID + "\">Attempt Quiz</a>");
-
-                    html.Append("</div>");
-                }
-
-                ViewCourse.Controls.Add(new Literal { Text = html.ToString() });
-            }
-        }
-
-
-        private DataTable GetData(string searchkey)
-        {
-            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
-            {
-                using (SqlCommand cmd1 = new SqlCommand("SELECT * FROM Course WHERE CourseName LIKE '%" + searchkey + "%'"))
-                {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
-                    {
-                        cmd1.Connection = con;
-                        sda.SelectCommand = cmd1;
-                        using (DataTable dt = new DataTable())
+                        using (SqlDataAdapter sda = new SqlDataAdapter())
                         {
-                            sda.Fill(dt);
-                            return dt;
+                            cmd.Connection = con;
+                            sda.SelectCommand = cmd;
+                            using (DataTable dt = new DataTable())
+                            {
+                                sda.Fill(dt);
+                                int CourseNumber = dt.Rows.Count;
+
+                                html.Append("<h1> " + CourseNumber + "</h1> ");
+
+                                ViewDashboard1.Controls.Add(new Literal { Text = html.ToString() });
+
+
+                                foreach (DataRow row in dt.Rows)
+                                {
+
+                                    string CourseName = row["CourseName"].ToString();
+                                    string CourseCategory = row["CourseCategory"].ToString();
+                                    string CourseID = row["CourseID"].ToString();
+
+                                    html3.Append("<td>" + CourseName + "</td>");
+                                    html3.Append("<td>" + CourseCategory+ "</td>");
+                                    html3.Append("<td><a href = \"Quiz.aspx?Id=" + CourseID + "\" class= \"btn edit\"> Attempt Quiz </a></td>");
+                                    html3.Append("</tr>");
+
+                                    
+
+                                }
+
+                                ViewDashboard3.Controls.Add(new Literal { Text = html3.ToString() });
+                                con.Close();
+
+                            }
+
+
+                            }
                         }
                     }
-                }
-            }
-        }
+                
+                string constr2 = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-        protected void Search_Click(object sender, EventArgs e)
-        {
-            string searchkey = this.searchkey.Text;
-            Response.Redirect("AdminDashboard.aspx?searchkey=" + searchkey);
+                using (SqlConnection con2 = new SqlConnection(constr2))
+                {
+                    using (SqlCommand cmd2 = new SqlCommand("SELECT * FROM [Score] WHERE UserID=" + UserID))
+                    {
+                        using (SqlDataAdapter sda2 = new SqlDataAdapter())
+                        {
+
+                            cmd2.Connection = con2;
+                            sda2.SelectCommand = cmd2;
+                            using (DataTable dt2 = new DataTable())
+                            {
+                                sda2.Fill(dt2);
+                                int AttemptedQuiz = dt2.Rows.Count;
+
+                                html2.Append("<h1> " + AttemptedQuiz + "</h1> ");
+                                ViewDashboard2.Controls.Add(new Literal { Text = html2.ToString() });
+
+                                con2.Close();
+
+                            }
+                        }
+
+                    }
+                }
+
+
+            
         }
     }
+}
 }

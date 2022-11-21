@@ -30,15 +30,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="admin_feedback.html">
+                    <a href="AdminViewFeedback.aspx">
                         <i class="uil uil-edit"></i>
                         <h5>Feedback</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="admin_password.html">
-                        <i class="uil uil-key-skeleton"></i>
-                        <h5>Change Password</h5>
                     </a>
                 </li>
                 
@@ -63,7 +57,7 @@
                     <asp:TextBox runat="server" ID="txt_lastname" class="input"></asp:TextBox><br />
 
               <label class="form-label" for="radio_gender" >Gender</label><br />
-                    <asp:RadioButtonList ID="radio_gender" runat="server">
+                    <asp:RadioButtonList ID="radio_gender" runat="server" >
                     <asp:ListItem Value="Male">Male</asp:ListItem>
                     <asp:ListItem Value="Female">Female</asp:ListItem>
                     </asp:RadioButtonList><br />

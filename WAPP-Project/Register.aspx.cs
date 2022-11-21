@@ -70,7 +70,6 @@ namespace WAPP_Project
 
                     cmd2.ExecuteNonQuery();
                     con.Close();
-                    lbl_msg.Text = "Account registered successfully!";
 
                     //Create Student identity
                     con.Open();
@@ -92,6 +91,9 @@ namespace WAPP_Project
                     cmd4.Parameters.AddWithValue("@UserID", CheckID);
                     cmd4.ExecuteNonQuery();
                     con.Close();
+
+
+                    Response.Write("<script>alert('Account created successfully!!');window.location.href='Login.aspx';</script>");
 
                 }
                 catch (Exception ex)

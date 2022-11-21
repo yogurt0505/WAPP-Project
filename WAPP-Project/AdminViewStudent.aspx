@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="AdminViewStudent"  class="active">
+                    <a href="AdminViewStudent.aspx"  class="active">
                         <i class="uil uil-user"></i>
                         <h5>Student</h5>
                     </a>
